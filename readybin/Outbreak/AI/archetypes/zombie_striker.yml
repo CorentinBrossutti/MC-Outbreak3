@@ -1,0 +1,8 @@
+# Hits very hard and is a bit faster, lacks some health
+# Fait très mal et est un peu plus rapide, mais manque de vie
+
+speedmult: 1.025
+damage: 5.0
+health: 12.0
+
+weight: 3

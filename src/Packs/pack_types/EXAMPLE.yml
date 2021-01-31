@@ -1,0 +1,99 @@
+# Example pack type file
+# Pack types are used for both ground items and chests
+# NOTE : Pack type files must start with pack_ and end with .yml
+# I advise you to also check pack_kitchen.yml which is the only default pack and a nice example
+
+# Les types de pack sont utilisés à la fois pour les objets au sol et les coffres
+# NOTE : Les noms de fichier de types de pack doivent commencer par pack_ et se terminer par .yml
+# Je conseille aussi de jeter un coup d'oeil à pack_kitchen.yml qui est le seul type de pack par défaut et un bon exemple
+
+# The time it takes for this pack type to respawn, in seconds
+# Le temps que met ce type de pack à respawn, en secondes
+respawn_delay: 300
+
+# The contents of this pack type start here
+# Ici commence la liste du contenu de ce type de pack
+contents:
+  # Typical object example... Here is a water bottle for instance (a potion). Note the name does not matter (tant que l'ID est bon)
+  # Exemple d'objet typique... Une bouteille d'eau (une potion). Le nom n'a pas a être exact (tant que l'ID est bon)
+  water_bottle:
+    item:
+      # Is this item stack a CrackShot weapon ? See further below for an example of this
+      # Est-ce que ce stack est une arme CrackShot ? Voir plus en dessous pour un exemple
+      weapon: false
+
+      # The id of the item stack. You can use both text and integer.
+      # See https://www.digminecraft.com/lists/item_id_list_pc_1_8.php and https://jd.bukkit.org/org/bukkit/Material.html
+      # WARNING : There is sometimes a mismatch between minecraft's text ids and bukkit's (like COOKED_PORK and GRILLED_PORK).
+      #           Be sure to check https://jd.bukkit.org/org/bukkit/Material.html for BUKKIT's text IDs or otherwise use numeric IDs
+
+      # L'id du stack. Il est possible d'utiliser comme ID le nom de l'objet ou son ID numérique.
+      # Voir https://www.digminecraft.com/lists/item_id_list_pc_1_8.php et https://jd.bukkit.org/org/bukkit/Material.html
+      # ATTENTION : Il y a parfois une différence entre les IDs textuels de Minecraft et Bukkit (par ex. COOKED_PORK et GRILLED_PORK)
+      #             Pensez à bien récupérer les IDs textuels de Bukkit sur cette page : https://jd.bukkit.org/org/bukkit/Material.html ou utilisez des IDs numériques
+      id: "potion"
+
+      # You can also set the data of the item stack. It is optional (0 by default if you don't specify it)
+      # For tools (such as bows, swords, pickaxes...) this can also be used to set their damage
+
+      # Il est aussi possible de définir la donnée (qui sert par ex. pour la couleur d'un tapis) du stack. Si vous ne spécifiez rien, 0 est la valeur par défaut
+      # Pour les outils (arcs, épées...) cela peut servir à définir leur usure
+      data: 0
+
+    # When a ground item or a chest is generated, a random quantity is selected between min (inclus) and max (inclus)
+    # Do note that for tools (bows, pickaxes...) and CrackShot weapons this is ignored and thus you need not specify it
+
+    # Quand un objet au sol ou on coffre est généré, une quantité aléatoire est sélectionnée entre min (inclus) et max (inclus)
+    # A noter que pour les outils (arcs, pioches...) et les armes CrackShot c'est ignoré donc pas besoin de le spécifier
+    quantity:
+      min: 1
+      max: 5
+
+    # The rarity of the item. For the different rarities see the file RARITY_HELP.txt
+    # La rareté de l'objet. Pour les différentes raretés voir le fichier RARITY_HELP.txt
+    rarity: "common"
+
+  # An example of a CrackShot weapon
+  # Exemple d'une arme CrackShot
+  ak47:
+    item:
+      weapon: true
+      # Since this is a weapon, the ID MUST BE THE NAME OF THE CRACKSHOT WEAPON
+      # Puisque c'est une arme, l'ID DOIT ETRE LE NOM DE L'ARME CRACKSHOT
+      id: "ak-47"
+      # Do note that data is disregarded for weapons. So you should not specify it
+      # La valeur de donnée est ignorée pour les armes, ne le spécifiez pas
+
+    # No need to specify a quantity for weapons. It will be disregarded and will always be 1
+    # Pas besoin de spécifier une quantité pour une arme. Ce sera ignoré et toujours 1
+
+    rarity: "rare"
+
+  # An example of ammunition... in this example gold nuggets as ak47 mags
+  # Un exemple de munition... dans l'exemple des pépites d'or en tant que chargeurs d'ak-47
+  ak47_ammo:
+    item:
+      weapon: false
+      id: "gold_nugget"
+    quantity:
+      min: 1
+      max: 3
+
+    rarity: "nice"
+
+  # A last example
+  # Un dernier example
+  carpet_magenta:
+    item:
+      weapon: false
+      # You can see you can use an integer as ID
+      # On voit bien qu'on peut utiliser un entier en tant qu'ID
+      id: 171
+      # Orange variation of carpet
+      # Variation orange du tapis
+      data: 1
+    quantity:
+      min: 2
+      max: 10
+
+    rarity: "medium"

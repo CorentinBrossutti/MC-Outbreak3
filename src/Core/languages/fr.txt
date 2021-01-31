@@ -1,0 +1,183 @@
+;ADMIN SECTION
+permission-denied=Vous n'avez pas la permission
+into-player=Connectez-vous en tant que joueur
+invalid-number=Nombre spécifié invalide
+player-not-found=Joueur non trouvé
+
+;MISC SECTION(INCLUDE BACKPACKS & THIRST)
+backpack-inv=SAC A DOS
+has-drink=Vous avez bu et vous sentez mieux
+died-thirst=Vous etes mort de soif
+thirsty=La soif se fait sentir
+
+;EFFECTS SECTION
+recoil-config-error=Impossible d'obtenir les valeurs de recul personnelles. Utilisation des valeurs par défaut.
+blood-msg1=§r§cMerde ! Je saigne !§r
+blood-msg2=§r§cPutain ! Je me suis ouvert !§r
+blood-msg3=§r§cAaaah...je me sens pas bien...§r
+blood-msg4=§r§cJ'ai la tête qui tourne...c'est pas le moment...§r
+default-motd=§r§l§1OutBreak §kPost-apocalyptic zombi.\n§r§4§lVenez §r§4§mmourir§r §4§lSURVIVRE!
+
+;IA SECTION
+choose-friend-inv=Choisir un ami
+self-chosen=§r§cNe vous choisissez pas vous-même§r
+already-gaming=§r§cCe joueur est déjà parti à l'aventure§r
+request-sent=Requête envoyée !
+request-received= voudrait partir avec vous
+command-accept=- /cranaz accept pour accepter
+command-deny=- /cranaz decline pour refuser
+no-request=§r§cVous n'avez pas de demandes de départ
+request-denied=Requête refusée
+res-pack-notice=§r§cIl t'est fortement recommandé d'obtenir le ressource pack§r
+darkauron-res-pack=§r§c[Darkauron -> toi]§r - Tu devrais aller voir Torteela pour le ressource pack
+zombie-msg-assault= est tombé sous l'assaut des zombies. Paix à son âme
+zombie-msg-zomb= a été infecté. Triste nouvelle.
+zombie-msg-horde= est mort sous une horde de zombies. Saluons son courage.
+go-alone-item=Partir seul
+go-alone-item-desc=Partez seul survivre dans un monde hostile
+go-several-item=Partir avec un ami
+go-several-item-desc=Partez à l'aventure avec UN SEUL amiS
+no-spawner=§r§cAucun spawner virtuel trouvé dans les 50 blocs autour de vous
+custom-zombies-spawn=Zombies modifiés spawnés sur votre curseur
+spawn-point-defined=Point de spawn aléatoire défini
+spawner-radius-default=Spawner de zombies avec rayon par défaut crée
+spawner-radius-custom=Spawner de zombies avec rayon perso crée
+;Sera completée avec facteur de base
+spawner-specify-factor=Spécifiez un facteur d'atténuation (de base: 
+
+;LEGACY SECTION
+welcome-1=Bienvenue à 
+welcome-2= sur le serveur. Nous lui souhaitons une excellente survie !
+personal-welcome=Bienvenue à toi. Tu peux lire les règles et le guide de survie.
+combat-left= §r§cest parti en plein combat.§r
+;DEATH MESSAGES
+die-explosion= §r§ca explosé !§r
+die-contact= §r§ca frôlé la mort !§r
+die-fall= §r§cs'est écrasé par terre !§r
+die-falling-block= §r§cs'est fait écraser.§r
+die-fire= §r§ca brûlé !§r
+die-unknown= §r§cest juste mort.§r
+die-drown= §r§cs'est noyé !§r
+die-light= §r§ca été foudroyé !§r
+die-shot= §r§cs'est fait tirer dessus !§r
+die-starve= §r§cest mort de faim !§r
+die-suffoc= §r§cs'est asphyxié !§r
+die-suicide= §r§cs'est donné la mort !§r
+die-void= §r§cest parti dans l'espace !§r
+die-poison= §r§cs'est fait empoisonner !§r
+choose-respack-inv=Choisir un pack de ressources
+light-respack-item=Ressource pack léger (performances légèrement meilleures)
+ultra-respack-item=Ressource pack ultra (pas si lourd que ça)
+logout3s=Déconnexion dans 3 secondes...
+get-respack-warn=Avant de partir, tu devrais obtenir le pack de ressources
+adv-already-gone=Tu es déjà parti
+
+;LOOTS SECTION
+loot-deleted=Point de loot supprimé !
+unable-delete-loot=Impossible de supprimer le loot
+pack-deleted=Point de pack supprimé !
+unable-delete-pack=Impossible de supprimer le pack
+edition-mode1=Mode édition activé. Clic droit pour supprimer un loot.
+edition-mode2=Mode édition désactivé.
+pack-list-header=|-----Liste des packs-----|
+pack-bedroom=BEDROOM - contient divers objets communs.
+pack-farm=FARM - contient principalement de la nourriture et des cultures.
+pack-kitchen=KITCHEN - contient surtout de la nourriture.
+pack-market=MARKET - contient divers objets, de la nourriture à l'arme blanche
+pack-military=MILITARY - contient divers objets rares, tel des armes, tenues de camo, médicaments...
+pack-hospital=HOSPITAL - contient des bandages, antalgiques, drogues...
+invalid-pack=Spécifiez un pack valide !
+loot-created=Point de loot créé avec succès
+pack-created=Point de pack créé avec succès
+pack-resources=RESOURCES - contient divers ressources (diamant, gravier, or...)
+
+;HELP SECTION
+;IA - ZIA.class
+reload=/outbreak reload - Recharger CranaZ
+zombies-spawn=/outbreak zombie [x] - Spawner X zombies sur votre curseur. Si X non spécifié, X vaut 1
+define-spawner=/outbreak spawner - Définir un spawner virtuel sur votre position
+spawner-state=/outbreak state - Obtenir les informations du spawner le plus proche dans les 50 blocs
+define-spawn=/outbreak spawn - Définir un point de spawn aléatoire
+;LOOTS - Loots.class
+clp-loot=/clp loot - Définir un point de loot (objet sur le sol qui respawn)
+clp-pack=/clp pack - Définir un point de pack (coffre qui respawn)
+clp-delpack=/clp delpack - Supprimer un point de pack
+clp-del=/clp del - Supprimer un point de loot
+clp-get=/clp get [objet] [nombre] - Vous donne {nombre} objet du type spécifié. Laisser objet et nombre vide pour obtenir la liste.
+clp-packs=/clp packs - Affiche la liste des packs disponibles.
+
+;ITEMS SECTION
+mosin=Mosin Nagant
+mosin-ammo=Balle de Mosin Nagant
+mosin-ammo2=Balle pour fusil de sniper type Mosin Nagant
+bazooka-ammo=Roquette
+bazooka-ammo2=Roquette pour bazooka & lance-roquettes
+ak-47=AK-47
+ak-47-ammo=Chargeur d'AK-47
+ak-47-ammo2=Chargeur pour Kalachnikov AK-47
+m320h=M320-H
+m320h-ammo=Grenade de M320-H
+m320h-ammo2=Grenade pour lance-grenades type M320-H
+stock-piece=Crosse
+stock-piece0=Pour fabriquer des armes.
+bar=BAR Browning
+bar-ammo=Chargeur de BAR Browning
+bar-ammo2=Chargeur de mitrailleuse type BAR Browning
+smith=Colt Smith
+smith-ammo=Chargeur de Colt Smith
+smith-ammo2=Chargeur pour Colt type Smith
+t-shirt=T-Shirt
+pants=Pantalon
+boots=Bottes
+helmet=Casquette
+fence=Barricade
+fence2=Pour être protégé en toutes circonstances
+flare=Fusée lumineuse
+flare2=Pour être vu de loin !
+mass=Masse
+mass2=Pas mal pour zigouiller du macchabé !
+backpack=Sac à dos
+backpack2=Vous permet de porter plus d'objets
+backpack3=Clic droit dans l'inventaire pour ouvrir
+axe=Hache
+axe2=Utile pour couper les zombies un peu trop collants
+machette=Machette
+machette2=Une machette bien aiguisée, et silencieuse !
+bow=Arc
+bow2=Pour tuer discrètement des morts-vivants (ça rime)
+bandages=Bandages
+bandages2=Ca peut être utile
+blood-small=Petite poche de sang
+blood-big=Grande poche de sang
+blood-bag-desc=Une petite transfusion ?
+amphet=Amphetamines
+amphet2=Cette drogue est une merde géniale pour se sentir
+amphet3=invincible en plein milieu des zombies
+analgesics=Antalgiques
+analgesics2=Pour soigner les bobos
+camo11=Tenue de camouflage - Plastron
+camo12=Permet d'être vu de moins loin - 20%
+camo21=Tenue de camouflage - Casque
+camo22=Permet d'être vu de moins loin - 10%
+camo31=Tenue de camouflage - Bottes
+camo32=Permet d'être vu de moins loin - 25%
+camo41=Tenue de camouflage - Pantalon
+camo42=Permet d'être vu de moins loin - 25%
+water=Bouteille d'eau
+water2=Pour tous les types de soif !
+arterial=Poison artériel
+arterial2=Augmente la pression sanguine de la cible
+arterial3=Cause des dommages directs moyens
+arterial4=Fait effet 45 secondes après injection
+neuro=Poison neurotoxique
+neuro2=Affaiblit très fortement la cible
+neuro3=Ne cause pas de dommages directs
+neuro4=Fait effet au bout de 2 minutes
+painkillers=Antidouleurs
+painkillers2=En cas de problèmes douloureux
+grip-piece=Poignée
+grip-piece0=Permet de fabriquer des armes
+barrel-piece=Canon
+barrel-piece0=Permet de fabriquer des armes
+spring-piece=Ressort
+spring-piece0=Permet de fabriquer des armes

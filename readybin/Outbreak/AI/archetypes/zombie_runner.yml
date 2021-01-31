@@ -1,0 +1,9 @@
+# Weak but very fast and quite persistent
+# Faible mais rapide et persistant
+
+speedmult: 1.2
+damage: 1.0
+health: 15.0
+persistence: 8
+
+weight: 6

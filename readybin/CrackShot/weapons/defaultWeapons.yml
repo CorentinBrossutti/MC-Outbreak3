@@ -1,0 +1,2875 @@
+Gauss:
+    Item_Information:
+        Item_Name: "&eGauss Shotgun"
+        Item_Type: 291
+        Item_Lore: "&eAdvanced pump-action shotgun.|&eFires metal slugs that penetrate|&eall targets within 40 blocks.|&eDeals 200% damage to Zombies."
+        Sounds_Acquired: BAT_TAKEOFF-1-1-0
+    Shooting:
+        Cancel_Left_Click_Block_Damage: true
+        Cancel_Right_Click_Interactions: true
+        Projectile_Amount: 1
+        Projectile_Type: energy
+        Projectile_Subtype: 40-1-NONE-0
+        Projectile_Damage: 12
+        Sounds_Shoot: WITHER_SHOOT-1-2-0,EXPLODE-1-2-0
+    Reload:
+        Enable: true
+        Reload_Amount: 8
+        Reload_Bullets_Individually: true
+        Reload_Duration: 10
+        Sounds_Reloading: IRONGOLEM_THROW-1-2-0
+    Firearm_Action:
+        Type: pump
+        Open_Duration: 12
+        Close_Duration: 3
+        Sound_Open: PISTON_EXTEND-1-2-0
+        Sound_Close: PISTON_EXTEND-1-2-0
+    Abilities:
+        Reset_Hit_Cooldown: true
+        Super_Effective: ZOMBIE-2
+    Particles:
+        Enable: true
+        Particle_Player_Shoot: BLOCK_BREAK-57
+    Hit_Events:
+        Enable: true
+        Sounds_Shooter: SHOOT_ARROW-1-2-0
+# Carbine:
+    # Item_Information:
+        # Item_Name: "&eCarbine"
+        # Item_Type: 104
+        # Item_Lore: "&eDeals crits with a 10% chance.|&eSwitch to the grenade launcher|&ewith right click. Fired grenades|&earm themselves in 0.25 seconds."
+        # Attachments:
+            # Type: main
+            # Info: "M320"
+            # Toggle_Delay: 5
+            # Sounds_Toggle: NOTE_STICKS-1-2-0
+        # Sounds_Acquired: BAT_TAKEOFF-1-1-0
+    # Shooting:
+        # Right_Click_To_Shoot: true
+        # Cancel_Left_Click_Block_Damage: true
+        # Cancel_Right_Click_Interactions: true
+        # Delay_Between_Shots: 3
+        # Recoil_Amount: 1
+        # Projectile_Amount: 1
+        # Projectile_Type: snowball
+        # Projectile_Speed: 40
+        # Projectile_Damage: 4
+        # Bullet_Spread: 0.5
+        # Sounds_Shoot: BLAZE_HIT-1-2-0,ZOMBIE_WOOD-1-2-0
+    # Sneak:
+        # Enable: true
+        # No_Recoil: true
+        # Bullet_Spread: 0.4
+    # Reload:
+        # Enable: true
+        # Reload_Amount: 8
+        # Reload_Duration: 30
+        # Sounds_Reloading: SKELETON_IDLE-1-0-0,FIRE_IGNITE-1-1-14,DOOR_OPEN-1-2-16,FIRE_IGNITE-1-1-26,HURT_FLESH-1-0-27,DOOR_CLOSE-1-2-28
+    # Firearm_Action:
+        # Type: slide
+        # Close_Duration: 8
+        # Sound_Close: CLICK-1-1-0
+    # Abilities:
+        # Reset_Hit_Cooldown: true
+    # Particles:
+        # Enable: true
+        # Particle_Impact_Anything: BLOCK_BREAK-80
+        # Particle_Critical: BLOCK_BREAK-55
+    # Hit_Events:
+        # Enable: true
+        # Sounds_Shooter: SHOOT_ARROW-1-2-0
+    # Critical_Hits:
+        # Enable: true
+        # Bonus_Damage: 2
+        # Chance: 10
+        # Sounds_Shooter: ORB_PICKUP-1-2-0
+
+
+
+Deagle:
+    Item_Information:
+        Item_Name: "&eDesert Eagle"
+        Item_Type: 104
+        Item_Lore: "&eDual pistols.|&eLeft/right click to shoot.|&eShoot enemies in the back|&efor bonus backstab damage."
+        Sounds_Acquired: BAT_TAKEOFF-1-1-0
+    Shooting:
+        Dual_Wield: true
+        Cancel_Left_Click_Block_Damage: true
+        Cancel_Right_Click_Interactions: true
+        Delay_Between_Shots: 2
+        Recoil_Amount: 2
+        Projectile_Amount: 1
+        Projectile_Type: egg
+        Projectile_Speed: 40
+        Projectile_Damage: 4
+        Bullet_Spread: 1
+        Sounds_Shoot: ZOMBIE_WOOD-1-2-0,ZOMBIE_WOOD-1-0-0
+    Sneak:
+        Enable: true
+        No_Recoil: true
+        Bullet_Spread: 0.75
+    Reload:
+        Enable: true
+        Reload_Amount: 7
+        Reload_Duration: 40
+        Sounds_Out_Of_Ammo: CLICK-2-1-0
+        Sounds_Reloading: DOOR_OPEN-1-2-4,DOOR_OPEN-1-2-8,DOOR_CLOSE-1-2-23,DOOR_CLOSE-1-2-38
+        Dual_Wield:
+            Single_Reload_Duration: 25
+            Sounds_Single_Reload: DOOR_OPEN-1-2-4,DOOR_CLOSE-1-2-23
+            Sounds_Shoot_With_No_Ammo: CLICK-2-2-0
+    Abilities:
+        Reset_Hit_Cooldown: true
+    Backstab:
+        Enable: true
+        Bonus_Damage: 2
+        Sounds_Shooter: ORB_PICKUP-2-2-0
+    Particles:
+        Enable: true
+        Particle_Backstab: BLOCK_BREAK-55
+    Hit_Events:
+        Enable: true
+        Sounds_Shooter: SHOOT_ARROW-2-2-0
+
+Bazooka:
+    Ammo:
+        Ammo_Item_ID: 385
+        Enable: True
+        Sounds_Out_Of_Ammo: NOTE_PLING-2-2-0
+        Sounds_Shoot_With_No_Ammo: NOTE_STICKS-2-2-0
+    Item_Information:
+        Enchantment_To_Check: SILK_TOUCH-100
+        Item_Name: "&eLance-roquettes"
+        Item_Type: 293
+        Item_Lore: "&eTire des roquettes|&eIdeal pour dégrossir un tas de zombies."
+        Sounds_Acquired: BAT_TAKEOFF-1-1-0
+    Shooting:
+        Right_Click_To_Shoot: true
+        Cancel_Left_Click_Block_Damage: true
+        Cancel_Right_Click_Interactions: true
+        Recoil_Amount: 2
+        Projectile_Amount: 1
+        Projectile_Type: fireball
+        Projectile_Speed: 10
+        Sounds_Shoot: ZOMBIE_WOOD-2-0-0,FIZZ-2-1-0
+    Sneak:
+        Enable: true
+        No_Recoil: true
+    Abilities:
+        No_Fall_Damage: true
+    Reload:
+        Enable: true
+        Reload_Amount: 1
+        Reload_Duration: 55
+        Take_Ammo_On_Reload: True
+        Sounds_Reloading: SKELETON_IDLE-2-0-10,PISTON_EXTEND-2-0-28,SKELETON_WALK-2-0-48
+    Particles:
+        Enable: true
+        Particle_Player_Shoot: BLOCK_BREAK-35
+    Shrapnel:
+        Enable: true
+        Block_Type: 77
+        Amount: 14
+        Speed: 7
+    Explosions:
+        Enable: true
+        Knockback: 5
+        Damage_Multiplier: 50
+        Explosion_No_Grief: false
+        Explosion_Radius: 6
+        Sounds_Shooter: SHOOT_ARROW-2-2-0
+
+Python:
+    Item_Information:
+        Enchantment_To_Check: SILK_TOUCH-100
+        Item_Name: "&ePython"
+        Item_Type: 290
+        Item_Lore: "&eRevolver.|&eDeals bonus damage on headshots."
+        Sounds_Acquired: BAT_TAKEOFF-1-1-0
+    Shooting:
+        Right_Click_To_Shoot: true
+        Cancel_Left_Click_Block_Damage: true
+        Cancel_Right_Click_Interactions: true
+        Delay_Between_Shots: 1
+        Projectile_Amount: 1
+        Projectile_Type: snowball
+        Projectile_Speed: 40
+        Projectile_Damage: 4
+        Bullet_Spread: 1
+        Sounds_Shoot: IRONGOLEM_HIT-2-2-0,ZOMBIE_METAL-2-2-0
+    Reload:
+        Enable: true
+        Reload_Amount: 6
+        Reload_Duration: 4545
+        Sounds_Reloading: LEVEL_UP-2-2-10,FIRE_IGNITE-2-2-38
+    Firearm_Action:
+        Type: revolver
+        Open_Duration: 5
+        Close_Duration: 5
+        Sound_Open: DOOR_OPEN-2-2-0
+        Sound_Close: DOOR_CLOSE-2-2-0
+    Abilities:
+        Reset_Hit_Cooldown: true
+    Hit_Events:
+        Enable: true
+        Sounds_Shooter: SHOOT_ARROW-2-2-0
+    Scope:
+        Enable: true
+        Zoom_Amount: 5
+        Zoom_Bullet_Spread: 0
+        Sounds_Toggle_Zoom: ENDERDRAGON_WINGS-2-2-0
+    Headshot:
+        Enable: true
+        Bonus_Damage: 2
+
+Riotshield:
+    Item_Information:
+        Item_Name: "&eBouclier anti-emeute"
+        Item_Type: 268
+        Item_Lore: "&eMaintenir clic droit pour lever le bouclier.|&eBloque les tirs et les coups frontals."
+        Sounds_Acquired: BAT_TAKEOFF-1-1-0
+    Riot_Shield:
+        Enable: true
+        Durability_Loss_Per_Hit: 5
+        Sounds_Blocked: GLASS-2-2-0
+        Sounds_Break: ITEM_BREAK-2-1-0
+
+Olympia:
+    Item_Information:
+        Item_Name: "&eOlympia"
+        Item_Type: 291
+        Item_Lore: "&eDouble-barreled shotgun.|&eDeadly at close range.|&eIneffective at longer ranges.|&eFires incendiary ammo."
+        Sounds_Acquired: BAT_TAKEOFF-1-1-0
+    Shooting:
+        Cancel_Left_Click_Block_Damage: true
+        Right_Click_To_Shoot: true
+        Cancel_Right_Click_Interactions: true
+        Delay_Between_Shots: 3
+        Recoil_Amount: 10
+        Projectile_Amount: 8
+        Projectile_Type: egg
+        Projectile_Speed: 30
+        Projectile_Damage: 6
+        Projectile_Incendiary:
+            Enable: true
+            Duration: 80
+        Bullet_Spread: 3
+        Reset_Fall_Distance: true
+        Sounds_Shoot: ZOMBIE_WOOD-1-1-0,EXPLODE-2-2-0,GHAST_FIREBALL-2-1-0
+    Sneak:
+        Enable: true
+        No_Recoil: true
+        Bullet_Spread: 3
+    Reload:
+        Enable: true
+        Reload_Amount: 2
+        Reload_Bullets_Individually: true
+        Reload_Duration: 15
+        Sounds_Reloading: NOTE_STICKS-2-1-0,NOTE_SNARE_DRUM-2-6-1
+    Firearm_Action:
+        Type: break
+        Open_Duration: 10
+        Close_Duration: 15
+        Sound_Open: DOOR_OPEN-2-2-0
+        Sound_Close: DOOR_CLOSE-2-2-0
+    Abilities:
+        Reset_Hit_Cooldown: true
+        No_Fall_Damage: true
+    Hit_Events:
+        Enable: true
+        Sounds_Shooter: SHOOT_ARROW-2-2-0
+    Scope:
+        Enable: true
+        Zoom_Amount: 5
+        Zoom_Bullet_Spread: 3
+        Sounds_Toggle_Zoom: ENDERDRAGON_WINGS-2-2-0
+    Damage_Based_On_Flight_Time:
+        Enable: true
+        Bonus_Damage_Per_Tick: -1
+    Particles:
+        Enable: true
+        Particle_Player_Shoot: FLAMES-1
+        Particle_Impact_Anything: BLOCK_BREAK-51
+Moisin:
+    Ammo:
+        Ammo_Item_ID: 377
+        Enable: True
+        Sounds_Out_Of_Ammo: NOTE_PLING-2-2-0
+        Sounds_Shoot_With_No_Ammo: NOTE_STICKS-2-2-0
+    Item_Information:
+        Item_Name: "Sniper Mosin"
+        Enchantment_To_Check: SILK_TOUCH-100
+        Item_Type: 285
+        Item_Lore: "Systeme a loquet | Efficace a toute distances"
+        Sounds_Acquired: BAT_TAKEOFF-1-1-0
+    Shooting:
+        Remove_Bullet_Drop: true
+        Right_Click_To_Shoot: true
+        Cancel_Left_Click_Block_Damage: true
+        Cancel_Right_Click_Interactions: true
+        Recoil_Amount: 5
+        Projectile_Amount: 1
+        Projectile_Type: snowball
+        Projectile_Speed: 20
+        Projectile_Damage: 25
+        Bullet_Spread: 
+        Sounds_Shoot: BLAZE_DEATH-2-1-0
+    Sneak:
+        Enable: true
+        No_Recoil: true
+        Bullet_Spread: 3
+    Reload:
+        Enable: true
+        Reload_Amount: 5
+        Take_Ammo_On_Reload: True
+        Take_Ammo_As_Magazine: True
+        Reload_Bullets_Individually: true
+        Reload_Duration: 10
+        Sounds_Reloading: NOTE_STICKS-2-1-0
+    Firearm_Action:
+        Type: bolt
+        Open_Duration: 10
+        Close_Duration: 7
+        Sound_Open: NOTE_STICKS-2-0-0,PISTON_RETRACT-2-2-2
+        Sound_Close: PISTON_EXTEND-2-2-0
+    Headshot:
+        Enable: true
+        Bonus_Damage: 50
+        Sounds_Victim: ZOMBIE_HURT-2-1-0
+    Abilities:
+        Reset_Hit_Cooldown: true
+    Particles:
+        Enable: true
+        Particle_Terrain: true
+    Scope:
+        Enable: true
+        Zoom_Amount: 7
+        Zoom_Bullet_Spread: 0
+        Sounds_Toggle_Zoom: ENDERDRAGON_WINGS-2-2-0
+M40A3:
+    Ammo:
+        Ammo_Item_ID: 385
+        Enable: True
+    Item_Information:
+        Item_Name: "M40A3"
+        Enchantment_To_Check: SILK_TOUCH-100
+        Item_Type: 294
+        Item_Lore: "Sniper, système a loquet | Avec un viseur de nuit"
+        Sounds_Acquired: BAT_TAKEOFF-1-1-0
+    Shooting:
+        Remove_Bullet_Drop: true
+        Right_Click_To_Shoot: true
+        Cancel_Left_Click_Block_Damage: true
+        Cancel_Right_Click_Interactions: true
+        Recoil_Amount: 5
+        Projectile_Amount: 1
+        Projectile_Type: snowball
+        Projectile_Speed: 20
+        Projectile_Damage: 10
+        Bullet_Spread: 
+        Sounds_Shoot: BLAZE_HIT-2-1-0,EXPLODE-2-50-0
+    Sneak:
+        Enable: true
+        No_Recoil: true
+        Bullet_Spread: 3
+    Reload:
+        Enable: true
+        Reload_Amount: 5
+        Take_Ammo_On_Reload: True
+        Take_Ammo_As_Magazine: True
+        Reload_Bullets_Individually: true
+        Reload_Duration: 10
+        Sounds_Reloading: NOTE_STICKS-2-1-0
+    Firearm_Action:
+        Type: bolt
+        Open_Duration: 8
+        Close_Duration: 7
+        Sound_Open: NOTE_STICKS-2-0-0,PISTON_RETRACT-2-2-2
+        Sound_Close: PISTON_EXTEND-2-2-0
+    Headshot:
+        Enable: true
+        Bonus_Damage: 50
+        Sounds_Shooter: NOTE_PLING-2-2-0
+        Sounds_Victim: HURT-2-1-0
+    Abilities:
+        Reset_Hit_Cooldown: true
+    Particles:
+        Enable: true
+        Particle_Player_Shoot: BLOCK_BREAK-1
+        Particle_Terrain: true
+    Scope:
+        Enable: true
+        Night_Vision: true
+        Zoom_Amount: 7
+        Zoom_Bullet_Spread: 0
+        Sounds_Toggle_Zoom: ENDERDRAGON_WINGS-2-2-0
+
+Type95:
+    Item_Information:
+        Item_Name: "&eType 95"
+        Item_Type: 104
+        Item_Lore: "&eSemi-automatic with three round burst fire.|&eGhast Tears are required for reloads."
+        Sounds_Acquired: BAT_TAKEOFF-1-1-0
+    SignShops:
+        Enable: true
+        Price: 266-10
+        Sign_Gun_ID: 95
+    Shooting:
+        Right_Click_To_Shoot: true
+        Cancel_Left_Click_Block_Damage: true
+        Cancel_Right_Click_Interactions: true
+        Delay_Between_Shots: 7
+        Recoil_Amount: 1
+        Projectile_Amount: 1
+        Projectile_Type: snowball
+        Projectile_Speed: 40
+        Projectile_Damage: 4
+        Bullet_Spread: 2
+        Sounds_Shoot: ITEM_BREAK-2-2-2,NOTE_SNARE_DRUM-2-0-2
+    Sneak:
+        Enable: true
+        No_Recoil: true
+        Bullet_Spread: 1
+    Burstfire:
+        Enable: true
+        Shots_Per_Burst: 3
+        Delay_Between_Shots_In_Burst: 2
+    Ammo:
+        Enable: true
+        Ammo_Item_ID: 370
+        Sounds_Out_Of_Ammo: NOTE_PLING-2-2-0
+        Sounds_Shoot_With_No_Ammo: NOTE_STICKS-2-2-0
+    Reload:
+        Enable: true
+        Reload_Amount: 30
+        Take_Ammo_On_Reload: true
+        Reload_Duration: 40
+        Sounds_Reloading: FIRE_IGNITE-2-1-4,DOOR_OPEN-2-2-6,FIRE_IGNITE-2-1-36,HURT_FLESH-2-0-37,DOOR_CLOSE-2-2-38
+    Firearm_Action:
+        Type: slide
+        Close_Duration: 10
+        Sound_Close: PISTON_RETRACT-1-2-0,PISTON_RETRACT-1-2-2
+    Scope:
+        Enable: true
+        Zoom_Amount: 5
+        Zoom_Bullet_Spread: 0
+        Sounds_Toggle_Zoom: ENDERDRAGON_WINGS-2-2-0
+    Abilities:
+        Reset_Hit_Cooldown: true
+    Hit_Events:
+        Enable: true
+        Sounds_Shooter: SHOOT_ARROW-2-2-0
+
+AK-47:
+    Item_Information:
+        Enchantment_To_Check: SILK_TOUCH-100
+        Item_Name: "AK47"
+        Item_Type: 277
+        Item_Lore: "Fusil automatique |Puissant et leger, ideal pour un assaut"
+        Sounds_Acquired: BAT_TAKEOFF-1-1-0
+    Ammo:
+        Ammo_Item_ID: 371
+        Enable: True
+        Sounds_Out_Of_Ammo: NOTE_PLING-2-2-0
+        Sounds_Shoot_With_No_Ammo: NOTE_STICKS-2-2-0
+    Shooting:
+        Remove_Bullet_Drop: true
+        Right_Click_To_Shoot: true
+        Cancel_Left_Click_Block_Damage: true
+        Cancel_Right_Click_Interactions: true
+        Delay_Between_Shots: 4
+        Recoil_Amount: 0
+        Projectile_Amount: 1
+        Projectile_Type: snowball
+        Projectile_Speed: 20
+        Projectile_Damage: 15
+        Bullet_Spread: 3
+       # Sounds_Shoot: IRONGOLEM_HIT-1-2-0,SKELETON_HURT-1-2-0, ZOMBIE_WOOD-1-2-0
+        Sounds_Shoot: ENDERDRAGON_DEATH-2-1-0,
+    Sneak:
+        Enable: true
+        No_Recoil: true
+        Bullet_Spread: 1
+    Burstfire:
+        Enable: true
+        Shots_Per_Burst: 2
+        Delay_Between_Shots_In_Burst: 4
+    Particles:
+        Enable: true
+        Particle_Terrain: true
+    Reload:
+        Enable: true
+        Reload_Amount: 30
+        Reload_Duration: 55
+        Sounds_Out_Of_Ammo: ITEM_BREAK-2-1-0
+        Sounds_Reloading: ENDERDRAGON_GROWL-3-1-0
+        Take_Ammo_On_Reload: True
+        Take_Ammo_As_Magazine: True
+    Scope:
+        Enable: true
+        Zoom_Amount: 5
+        Zoom_Bullet_Spread: 0.3
+        Sounds_Toggle_Zoom: ENDERDRAGON_WINGS-2-2-0
+    Abilities:
+        Reset_Hit_Cooldown: true
+Flame:
+    Burstfire:
+        Enable: true
+        Delay_Between_Shots_In_Burst: 2
+        Shots_Per_Burst: 4
+    Item_Information:
+        Item_Name: "Lance Flamme"
+        Item_Type: 293
+        Item_Lore: "Lance Flamme | Pour allumer le Barbecue"
+        Sounds_Acquired: BAT_TAKEOFF-1-1-0
+    Ammo:
+        Enable: true
+        Ammo_Item_ID: 399
+        Sounds_Out_Of_Ammo: NOTE_PLING-2-2-0
+        Sounds_Shoot_With_No_Ammo: NOTE_STICKS-2-2-0
+    Shooting:
+        Projectile_Flames: true
+        Right_Click_To_Shoot: true
+        Cancel_Left_Click_Block_Damage: true
+        Delay_Between_Shots: 0
+        Projectile_Amount: 3
+        Projectile_Type: egg
+        Projectile_Speed: 30
+        Projectile_Damage: 4
+        Bullet_Spread: 3
+        Projectile_Incendiary:
+            Enable: true
+            Duration: 80
+        Sounds_Shoot: MAGMACUBE_JUMP-2-1-0
+    Reload:
+        Enable: true
+        Reload_Amount: 100
+        Reload_Duration: 45
+        Take_Ammo_On_Reload: True
+        Take_Ammo_As_Magazine: True
+        Sounds_Reloading: ITEM_BREAK-2-1-0, PISTON_RETRACT-1-2-0 #Ca aussi on verra
+    Particles:
+        Enable: true
+        Particle_Player_Shoot: FLAME
+        Particle_Impact_Anything: BLOCK_BREAK-51
+Taser:
+    Item_Information:
+        Item_Name: "&eTaser"
+        Item_Type: 359
+        Item_Lore: "&eStuns and blinds target.|&6Ammo: Nether Star"
+        Enchantment_To_Check: DAMAGE_UNDEAD-2
+        Sounds_Acquired: BAT_TAKEOFF-1-1-0
+    Shooting:
+        Cancel_Left_Click_Block_Damage: true
+        Delay_Between_Shots: 3
+        Recoil_Amount: 0
+        Projectile_Amount: 2
+        Projectile_Type: arrow
+        Remove_Arrows_On_Impact: true
+        Projectile_Speed: 60
+        Projectile_Damage: 3
+        Projectile_Incendiary:
+            Enable: false
+            Duration: 120
+        Bullet_Spread: 2
+        Reset_Fall_Distance: true
+        Sounds_Shoot: ENDERDRAGON_HIT-2-2-0
+    Reload:
+        Enable: true
+        Reload_Amount: 15
+        Take_Ammo_On_Reload: true
+        Take_Ammo_As_Magazine: true
+        Reload_Duration: 80
+        Sounds_Reloading: NOTE_STICKS-2-1-0,NOTE_SNARE_DRUM-2-6-1
+    Firearm_Action:
+        Type: break
+        Open_Duration: 10
+        Close_Duration: 15
+        Sound_Open: DOOR_OPEN-2-2-0
+        Sound_Close: DOOR_CLOSE-2-2-0
+    Abilities:
+        Reset_Hit_Cooldown: true
+    Potion_Effects:
+        Activation: hit
+        Potion_Effect_Victim: CONFUSION-120-5,SLOW-120-5,POISON-30-1
+    Hit_Events:
+        Enable: true
+        Sounds_Shoot: ENDERDRAGON_HIT-2-2-0,VILLAGER_NO-1-1-0,VILLAGER_NO-1-1-1,VILLAGER_NO-1-1-2,VILLAGER_NO-1-1-3,VILLAGER_NO-1-1-4,VILLAGER_NO-1-1-5,VILLAGER_NO-1-1-6,VILLAGER_NO-1-1-7,VILLAGER_NO-1-1-8,VILLAGER_NO-1-1-9,VILLAGER_NO-1-1-10,VILLAGER_NO-1-1-11,VILLAGER_NO-1-1-12,VILLAGER_NO-1-1-13,VILLAGER_NO-1-1-14
+        Sounds_Victim: ENDERDRAGON_HIT-2-2-0,VILLAGER_NO-1-1-0,VILLAGER_NO-1-1-1,VILLAGER_NO-1-1-2,VILLAGER_NO-1-1-3,VILLAGER_NO-1-1-4,VILLAGER_NO-1-1-5,VILLAGER_NO-1-1-6,VILLAGER_NO-1-1-7,VILLAGER_NO-1-1-8,VILLAGER_NO-1-1-9,VILLAGER_NO-1-1-10,VILLAGER_NO-1-1-11,VILLAGER_NO-1-1-12,VILLAGER_NO-1-1-13,VILLAGER_NO-1-1-14
+    Scope:
+        Enable: true
+        Zoom_Amount: 2
+        Zoom_Bullet_Spread: 0
+        Sounds_Toggle_Zoom: ENDERDRAGON_WINGS-2-2-0
+    Particles:
+        Enable: true
+        Particle_Terrain: true
+        Particle_Impact_Anything: SMOKE
+    Ammo:
+        Enable: true
+        Ammo_Item_ID: 399
+        Sounds_Out_Of_Ammo: NOTE_PLING-2-2-0
+FM17:
+    Item_Information:
+        Item_Name: "&eFM17"
+        Item_Type: 104
+        Item_Lore: "&eSemi-Automatic pistol.|&eDeals heavy damage"
+        Sounds_Acquired: BAT_TAKEOFF-1-1-0
+    SignShops:
+        Enable: true
+        Price: 266-3
+        Sign_Gun_ID: 6
+    Shooting:
+        Cancel_Left_Click_Block_Damage: true
+        Delay_Between_Shots: 1
+        Projectile_Amount: 1
+        Projectile_Type: snowball
+        Projectile_Speed: 50
+        Projectile_Damage: 6
+        Bullet_Spread: 0
+        Sounds_Shoot: IRONGOLEM_HIT-2-2-0,ZOMBIE_METAL-2-2-0
+    Sneak:
+        Enable: true
+        No_Recoil: true
+        Bullet_Spread: 0
+    Reload:
+        Enable: true
+        Reload_Amount: 12
+        Reload_Duration: 60
+        Sounds_Reloading: FIRE_IGNITE-2-2-38
+    Firearm_Action:
+        Type: revolver
+        Open_Duration: 5
+        Close_Duration: 5
+        Sound_Open: DOOR_OPEN-2-2-0
+        Sound_Close: DOOR_CLOSE-2-2-0
+    Abilities:
+        Reset_Hit_Cooldown: true
+    Hit_Events:
+        Enable: true
+        Sounds_Shooter: SHOOT_ARROW-2-2-0
+    Scope:
+        Enable: true
+        Zoom_Amount: 4
+        Zoom_Bullet_Spread: 0
+        Sounds_Toggle_Zoom: ENDERDRAGON_WINGS-2-2-0
+    Headshot:
+        Enable: true
+        Bonus_Damage: 2
+
+HK21:
+    Item_Information:
+        Item_Name: "&eHK21"
+        Item_Type: 104
+        Item_Lore: "&eFully automatic with lots of ammo."
+        Sounds_Acquired: BAT_TAKEOFF-1-1-0
+    SignShops:
+        Enable: true
+        Price: 266-5
+        Sign_Gun_ID: 7
+    Shooting:
+        Right_Click_To_Shoot: true
+        Cancel_Left_Click_Block_Damage: true
+        Delay_Between_Shots: 3
+        Recoil_Amount: 1
+        Projectile_Amount: 1
+        Projectile_Type: snowball
+        Projectile_Speed: 39
+        Projectile_Damage: 10
+        Bullet_Spread: 1
+        Sounds_Shoot: IRONGOLEM_HIT-2-2-0,SKELETON_HURT-2-2-0,ZOMBIE_WOOD-1-2-0,DOOR_OPEN-2-2-0
+    Sneak:
+        Enable: true
+        No_Recoil: true
+        Bullet_Spread: 0.5
+    Burstfire:
+        Enable: true
+        Shots_Per_Burst: 2
+        Delay_Between_Shots_In_Burst: 3
+    Reload:
+        Enable: true
+        Reload_Amount: 120
+        Take_Ammo_On_Reload: true
+        Reload_Duration: 80
+        Sounds_Out_Of_Ammo: ITEM_BREAK-2-1-0
+        Sounds_Reloading: FIRE_IGNITE-2-1-4,DOOR_OPEN-2-2-6,FIRE_IGNITE-2-1-36,HURT_FLESH-2-0-37,DOOR_CLOSE-2-2-38
+    Firearm_Action:
+        Type: slide
+        Close_Duration: 10
+        Sound_Close: PISTON_RETRACT-1-2-0,PISTON_RETRACT-1-2-3,DOOR_OPEN-2-2-0
+    Scope:
+        Enable: true
+        Zoom_Amount: 4
+        Zoom_Bullet_Spread: 0.3
+        Sounds_Toggle_Zoom: ENDERDRAGON_WINGS-2-2-0
+    Abilities:
+        Reset_Hit_Cooldown: true
+    Hit_Events:
+        Enable: true
+        Sounds_Shooter: SHOOT_ARROW-2-2-0
+
+G-11:
+    Item_Information:
+        Item_Name: "&eG-11"
+        Item_Type: 104
+        Item_Lore: "&eSemi-automatic with three round burst fire.|&eHeavy damage and accuracy."
+        Sounds_Acquired: BAT_TAKEOFF-1-1-0
+    SignShops:
+        Enable: true
+        Price: 266-3
+        Sign_Gun_ID: 8
+    Shooting:
+        Cancel_Left_Click_Block_Damage: true
+        Delay_Between_Shots: 7
+        Recoil_Amount: 1
+        Projectile_Amount: 1
+        Projectile_Type: snowball
+        Projectile_Speed: 80
+        Projectile_Damage: 6
+        Bullet_Spread: 3
+        Sounds_Shoot: ITEM_BREAK-2-2-2,NOTE_SNARE_DRUM-2-0-2
+    Sneak:
+        Enable: true
+        No_Recoil: true
+        Bullet_Spread: 2
+    Burstfire:
+        Enable: true
+        Shots_Per_Burst: 3
+        Delay_Between_Shots_In_Burst: 2
+    Ammo:
+        Enable: false
+        Ammo_Item_ID: 370
+        Sounds_Out_Of_Ammo: NOTE_PLING-2-2-0
+        Sounds_Shoot_With_No_Ammo: NOTE_STICKS-2-2-0
+    Reload:
+        Enable: true
+        Reload_Amount: 45
+        Take_Ammo_On_Reload: true
+        Reload_Duration: 60
+        Sounds_Reloading: FIRE_IGNITE-2-1-4,DOOR_OPEN-2-2-6,FIRE_IGNITE-2-1-36,HURT_FLESH-2-0-37,DOOR_CLOSE-2-2-38
+    Firearm_Action:
+        Type: slide
+        Close_Duration: 10
+        Sound_Close: PISTON_RETRACT-1-2-0,PISTON_RETRACT-1-2-2
+    Scope:
+        Enable: true
+        Zoom_Amount: 8
+        Zoom_Bullet_Spread: 0
+        Sounds_Toggle_Zoom: ENDERDRAGON_WINGS-2-2-0
+    Abilities:
+        Reset_Hit_Cooldown: true
+    Hit_Events:
+        Enable: true
+        Sounds_Shooter: SHOOT_ARROW-2-2-0
+
+AA-12:
+    Item_Information:
+        Item_Name: "&eAA-12"
+        Item_Type: 291
+        Item_Lore: "&eSemi-automatic shotgun.|&eDeadly at close range."
+        Sounds_Acquired: BAT_TAKEOFF-1-1-0
+
+    Shooting:
+        Right_Click_To_Shoot: true
+        Cancel_Left_Click_Block_Damage: true
+        Delay_Between_Shots: 3
+        Recoil_Amount: 10
+        Projectile_Amount: 8
+        Projectile_Type: snowball
+        Projectile_Speed: 30
+        Projectile_Damage: 4
+        Projectile_Incendiary:
+            Enable: true
+            Duration: 80
+        Bullet_Spread: 3
+        Reset_Fall_Distance: true
+        Sounds_Shoot: ZOMBIE_WOOD-1-1-0,EXPLODE-2-2-0,GHAST_FIREBALL-2-1-0
+    Sneak:
+        Enable: true
+        No_Recoil: true
+        Bullet_Spread: 3
+    Reload:
+        Enable: true
+        Reload_Amount: 14
+        Reload_Bullets_Individually: true
+        Reload_Duration: 15
+        Sounds_Reloading: NOTE_STICKS-2-1-0,NOTE_SNARE_DRUM-2-6-1
+    Firearm_Action:
+        Type: break
+        Open_Duration: 10
+        Close_Duration: 15
+        Sound_Open: DOOR_OPEN-2-2-0
+        Sound_Close: DOOR_CLOSE-2-2-0
+    Abilities:
+        Reset_Hit_Cooldown: true
+        No_Fall_Damage: true
+    Hit_Events:
+        Enable: true
+        Sounds_Shooter: SHOOT_ARROW-2-2-0
+    Scope:
+        Enable: true
+        Zoom_Amount: 6
+        Zoom_Bullet_Spread: 3
+        Sounds_Toggle_Zoom: ENDERDRAGON_WINGS-2-2-0
+    Damage_Based_On_Flight_Time:
+        Enable: true
+        Bonus_Damage_Per_Tick: -1
+    Particles:
+        Enable: true
+        Particle_Player_Shoot: FLAMES-1
+        Particle_Impact_Anything: BLOCK_BREAK-51
+
+Smith:
+    Ammo:
+        Ammo_Item_ID: 341
+        Enable: True
+        Sounds_Out_Of_Ammo: NOTE_PLING-2-2-0
+        Sounds_Shoot_With_No_Ammo: NOTE_STICKS-2-2-0
+    Item_Information:
+        Item_Name: "&eColt Smith"
+        Item_Type: 279
+        Item_Lore: "&ePistolet semi-automatique."
+        Sounds_Acquired: BAT_TAKEOFF-1-1-0
+    Shooting:
+        Right_Click_To_Shoot: false
+        Cancel_Left_Click_Block_Damage: true
+        Delay_Between_Shots: 1
+        Projectile_Amount: 1
+        Projectile_Type: snowball
+        Projectile_Speed: 40
+        Projectile_Damage: 2
+        Bullet_Spread: 2
+        Sounds_Shoot: ENDERDRAGON_DEATH-2-1-0,
+    Sneak:
+        Enable: true
+        No_Recoil: true
+        Bullet_Spread: 2
+    Reload:
+        Enable: true
+        Reload_Amount: 12
+        Reload_Duration: 50
+        Sounds_Reloading: ENDERDRAGON_GROWL-3-1-0
+        Take_Ammo_As_Magazine: True
+        Take_Ammo_On_Reload: True
+    Firearm_Action:
+        Type: revolver
+        Open_Duration: 5
+        Close_Duration: 5
+        Sound_Open: DOOR_OPEN-2-2-0
+        Sound_Close: DOOR_CLOSE-2-2-0
+    Abilities:
+        Reset_Hit_Cooldown: true
+    Hit_Events:
+        Enable: true
+        Sounds_Shooter: SHOOT_ARROW-2-2-0
+    Scope:
+        Enable: true
+        Zoom_Amount: 5
+        Zoom_Bullet_Spread: 0
+        Sounds_Toggle_Zoom: ENDERDRAGON_WINGS-2-2-0
+    Headshot:
+        Enable: true
+        Bonus_Damage: 2
+
+Famas:
+    Item_Information:
+        Item_Name: "&eFamas"
+        Item_Type: 104
+        Item_Lore: "&eFully automatic with high power.|&eEffective at medium range.|&eControls are inverted."
+        Sounds_Acquired: BAT_TAKEOFF-1-1-0
+    SignShops:
+        Enable: true
+        Price: 266-4
+        Sign_Gun_ID: 12
+    Shooting:
+        Right_Click_To_Shoot: true
+        Cancel_Left_Click_Block_Damage: true
+        Delay_Between_Shots: 4
+        Recoil_Amount: 0
+        Projectile_Amount: 2
+        Projectile_Type: snowball
+        Projectile_Speed: 39
+        Projectile_Damage: 3
+        Bullet_Spread: 2
+        Sounds_Shoot: IRONGOLEM_HIT-2-2-0,SKELETON_HURT-2-2-0,ZOMBIE_WOOD-1-2-0
+    Sneak:
+        Enable: true
+        No_Recoil: true
+        Bullet_Spread: 1
+    Burstfire:
+        Enable: true
+        Shots_Per_Burst: 2
+        Delay_Between_Shots_In_Burst: 3
+    Reload:
+        Enable: true
+        Reload_Amount: 40
+        Take_Ammo_On_Reload: true
+        Reload_Duration: 60
+        Sounds_Out_Of_Ammo: ITEM_BREAK-2-1-0
+        Sounds_Reloading: FIRE_IGNITE-2-1-4,DOOR_OPEN-2-2-6,FIRE_IGNITE-2-1-36,HURT_FLESH-2-0-37,DOOR_CLOSE-2-2-38
+    Firearm_Action:
+        Type: slide
+        Close_Duration: 10
+        Sound_Close: PISTON_RETRACT-1-2-0,PISTON_RETRACT-1-2-3
+    Scope:
+        Enable: true
+        Zoom_Amount: 6
+        Zoom_Bullet_Spread: 0
+        Sounds_Toggle_Zoom: ENDERDRAGON_WINGS-2-2-0
+    Abilities:
+        Reset_Hit_Cooldown: true
+    Hit_Events:
+        Enable: true
+        Sounds_Shooter: SHOOT_ARROW-2-2-0
+
+Thompson:
+    Item_Information:
+        Enchantment_To_Check: SILK_TOUCH-100
+        Item_Name: "Thompson"
+        Item_Type: 278
+        Item_Lore: "Fusil automatique de grande puissance |Tirs courts preferables"
+        Sounds_Acquired: BAT_TAKEOFF-1-1-0
+    Shooting:
+        Remove_Bullet_Drop: true
+        Right_Click_To_Shoot: true
+        Cancel_Left_Click_Block_Damage: true
+        Delay_Between_Shots: 2
+        Recoil_Amount: 0
+        Projectile_Amount: 1
+        Projectile_Type: snowball
+        Projectile_Speed: 20
+        Projectile_Damage: 10
+        Bullet_Spread: 1
+        Sounds_Shoot: BLAZE_BREATH-1-1-0
+    Particles:
+        Enable: true
+        Particle_Terrain: true
+    Sneak:
+        Enable: true
+        No_Recoil: true
+        Bullet_Spread: 0.5
+    Burstfire:
+        Enable: true
+        Shots_Per_Burst: 2
+        Delay_Between_Shots_In_Burst: 3
+    Reload:
+        Enable: true
+        Reload_Amount: 20
+        Take_Ammo_On_Reload: true
+        Take_Ammo_As_Magazine: true
+        Reload_Duration: 40
+        Sounds_Out_Of_Ammo: ITEM_BREAK-2-1-0
+        Sounds_Reloading: ENDERDRAGON_GROWL-2-1-0
+    Ammo:
+        Enable: true
+        Ammo_Item_ID: 341
+        Sounds_Out_Of_Ammo: NOTE_PLING-2-2-0
+
+    Firearm_Action:
+        Type: slide
+        Close_Duration: 10
+        Sound_Close: PISTON_RETRACT-1-2-0,PISTON_RETRACT-1-2-3
+    Scope:
+        Enable: true
+        Zoom_Amount: 6
+        Zoom_Bullet_Spread: 0
+        Sounds_Toggle_Zoom: ENDERDRAGON_WINGS-2-2-0
+    Abilities:
+        Reset_Hit_Cooldown: true
+    Hit_Events:
+        Enable: true
+        Sounds_Shooter: SHOOT_ARROW-2-2-0
+
+FG42:
+    Item_Information:
+        Item_Name: "&eFG42"
+        Item_Type: 104
+        Item_Lore: "&eFully automatic with medium power."
+        Sounds_Acquired: BAT_TAKEOFF-1-1-0
+    SignShops:
+        Enable: true
+        Price: 266-3
+        Sign_Gun_ID: 22
+    Shooting:
+        Right_Click_To_Shoot: true
+        Cancel_Left_Click_Block_Damage: true
+        Delay_Between_Shots: 3
+        Recoil_Amount: 0
+        Projectile_Amount: 1
+        Projectile_Type: snowball
+        Projectile_Speed: 80
+        Projectile_Damage: 4
+        Bullet_Spread: 1
+        Sounds_Shoot: IRONGOLEM_HIT-2-2-0,SKELETON_HURT-2-2-0,ZOMBIE_WOOD-1-2-0
+    Sneak:
+        Enable: true
+        No_Recoil: true
+        Bullet_Spread: 2
+    Burstfire:
+        Enable: true
+        Shots_Per_Burst: 2
+        Delay_Between_Shots_In_Burst: 4
+    Reload:
+        Enable: true
+        Reload_Amount: 32
+        Take_Ammo_On_Reload: true
+        Reload_Duration: 50
+        Sounds_Out_Of_Ammo: ITEM_BREAK-2-1-0
+        Sounds_Reloading: FIRE_IGNITE-2-1-4,DOOR_OPEN-2-2-6,FIRE_IGNITE-2-1-36,HURT_FLESH-2-0-37,DOOR_CLOSE-2-2-38
+    Firearm_Action:
+        Type: slide
+        Close_Duration: 10
+        Sound_Close: PISTON_RETRACT-1-2-0,PISTON_RETRACT-1-2-3
+    Scope:
+        Enable: true
+        Zoom_Amount: 6
+        Zoom_Bullet_Spread: 0
+        Sounds_Toggle_Zoom: ENDERDRAGON_WINGS-2-2-0
+    Abilities:
+        Reset_Hit_Cooldown: true
+    Hit_Events:
+        Enable: true
+        Sounds_Shooter: SHOOT_ARROW-2-2-0
+
+M14:
+    Item_Information:
+        Item_Name: "&eM14"
+        Item_Type: 104
+        Item_Lore: "&eSemi-automatic rifle."
+        Sounds_Acquired: BAT_TAKEOFF-1-1-0
+    SignShops:
+        Enable: true
+        Price: 266-1
+        Sign_Gun_ID: 23
+    Shooting:
+        Cancel_Left_Click_Block_Damage: true
+        Delay_Between_Shots: 1
+        Projectile_Amount: 1
+        Projectile_Type: snowball
+        Projectile_Speed: 50
+        Projectile_Damage: 4
+        Bullet_Spread: 1
+        Sounds_Shoot: IRONGOLEM_HIT-2-2-0,ZOMBIE_METAL-2-2-0,DOOR_OPEN-2-2-1,FIRE_IGNITE-2-1-0
+    Sneak:
+        Enable: true
+        No_Recoil: true
+        Bullet_Spread: 1
+    Reload:
+        Enable: true
+        Reload_Amount: 10
+        Reload_Duration: 50
+        Sounds_Reloading: FIRE_IGNITE-2-2-0,IRONGOLEM_HIT-2-2-8,ZOMBIE_METAL-2-2-30,FIRE_IGNITE-2-1-48
+    Firearm_Action:
+        Type: revolver
+        Open_Duration: 5
+        Close_Duration: 5
+        Sound_Open: DOOR_OPEN-2-2-0
+        Sound_Close: DOOR_CLOSE-2-2-0
+    Abilities:
+        Reset_Hit_Cooldown: true
+    Hit_Events:
+        Enable: true
+        Sounds_Shooter: SHOOT_ARROW-2-2-0
+    Scope:
+        Enable: true
+        Zoom_Amount: 5
+        Zoom_Bullet_Spread: 0
+        Sounds_Toggle_Zoom: ENDERDRAGON_WINGS-2-2-0
+    Headshot:
+        Enable: true
+        Bonus_Damage: 2
+
+Arisaka:
+    Item_Information:
+        Item_Name: "&eArisaka"
+        Item_Type: 294
+        Item_Lore: "&eDeadly bolt-action rifle.|&eDeals double damage on headshots."
+        Sounds_Acquired: BAT_TAKEOFF-1-1-0
+    SignShops:
+        Enable: true
+        Price: 266-2
+        Sign_Gun_ID: 24
+    Shooting:
+        Right_Click_To_Shoot: true
+        Cancel_Left_Click_Block_Damage: true
+        Recoil_Amount: 2
+        Projectile_Amount: 1
+        Projectile_Type: snowball
+        Projectile_Speed: 70
+        Projectile_Damage: 8
+        Bullet_Spread: 1
+        Reset_Fall_Distance: true
+        Sounds_Shoot: BLAZE_HIT-2-1-0,EXPLODE-2-50-0
+    Sneak:
+        Enable: true
+        No_Recoil: true
+        Bullet_Spread: 1
+    Reload:
+        Enable: true
+        Reload_Amount: 5
+        Reload_Bullets_Individually: true
+        Take_Ammo_On_Reload: false
+        Reload_Duration: 10
+        Sounds_Reloading: NOTE_STICKS-2-1-0
+    Firearm_Action:
+        Type: bolt
+        Open_Duration: 8
+        Close_Duration: 7
+        Sound_Open: NOTE_STICKS-2-0-0,PISTON_RETRACT-2-2-2
+        Sound_Close: PISTON_EXTEND-2-2-0
+    Headshot:
+        Enable: true
+        Bonus_Damage: 10
+        Sounds_Shooter: NOTE_PLING-2-2-0
+        Sounds_Victim: HURT-2-1-0
+    Abilities:
+        Reset_Hit_Cooldown: true
+        Knockback: 3
+    Scope:
+        Enable: true
+        Night_Vision: true
+        Zoom_Amount: 9
+        Zoom_Bullet_Spread: 0
+        Sounds_Toggle_Zoom: ENDERDRAGON_WINGS-2-2-0
+    Hit_Events:
+        Enable: true
+        Sounds_Shooter: SHOOT_ARROW-2-2-0
+
+Gibbs-O-Matic:
+    Item_Information:
+        Item_Name: "&eGibbs-O-Matic"
+        Item_Type: 104
+        Item_Lore: "&eFully automatic with high power.|&eEffective at medium range."
+        Sounds_Acquired: BAT_TAKEOFF-1-1-0
+    SignShops:
+        Enable: true
+        Price: 266-5
+        Sign_Gun_ID: 25
+    Shooting:
+        Right_Click_To_Shoot: true
+        Cancel_Left_Click_Block_Damage: true
+        Delay_Between_Shots: 1
+        Recoil_Amount: 1
+        Projectile_Amount: 1
+        Projectile_Type: snowball
+        Projectile_Speed: 80
+        Projectile_Damage: 6
+        Bullet_Spread: 1
+        Sounds_Shoot: IRONGOLEM_HIT-2-2-0,SKELETON_HURT-2-2-0,ZOMBIE_WOOD-1-2-0,NOTE_PLING-2-4-0,DOOR_CLOSE-2-2-1
+    Sneak:
+        Enable: true
+        No_Recoil: true
+        Bullet_Spread: 1
+    Burstfire:
+        Enable: true
+        Shots_Per_Burst: 2
+        Delay_Between_Shots_In_Burst: 3
+    Reload:
+        Enable: true
+        Reload_Amount: 40
+        Take_Ammo_On_Reload: true
+        Reload_Duration: 40
+        Sounds_Out_Of_Ammo: ITEM_BREAK-2-1-0
+        Sounds_Reloading: FIRE_IGNITE-2-1-4,DOOR_OPEN-2-2-6,FIRE_IGNITE-2-1-36,HURT_FLESH-2-0-37,DOOR_CLOSE-2-2-38
+    Firearm_Action:
+        Type: slide
+        Close_Duration: 10
+        Sound_Close: PISTON_RETRACT-1-2-0,PISTON_RETRACT-1-2-3
+    Scope:
+        Enable: true
+        Night_Vision: true
+        Zoom_Amount: 7
+        Zoom_Bullet_Spread: 0
+        Sounds_Toggle_Zoom: ENDERDRAGON_WINGS-2-2-0
+    Abilities:
+        Reset_Hit_Cooldown: true
+    Hit_Events:
+        Enable: true
+        Sounds_Shooter: SHOOT_ARROW-2-2-0
+
+Commando:
+    Item_Information:
+        Item_Name: "&eCommando"
+        Item_Type: 104
+        Item_Lore: "&eFully automatic with medium power.|&eEffective at medium range."
+        Sounds_Acquired: BAT_TAKEOFF-1-1-0
+    SignShops:
+        Enable: true
+        Price: 266-4
+        Sign_Gun_ID: 26
+    Shooting:
+        Right_Click_To_Shoot: true
+        Cancel_Left_Click_Block_Damage: true
+        Delay_Between_Shots: 3
+        Recoil_Amount: 1
+        Projectile_Amount: 1
+        Projectile_Type: snowball
+        Projectile_Speed: 39
+        Projectile_Damage: 4
+        Bullet_Spread: 1
+        Sounds_Shoot: IRONGOLEM_HIT-2-2-0,SKELETON_HURT-2-2-0,ZOMBIE_WOOD-1-2-0,PISTON_RETRACT-1-2-0
+    Sneak:
+        Enable: true
+        No_Recoil: true
+        Bullet_Spread: 1
+    Burstfire:
+        Enable: true
+        Shots_Per_Burst: 2
+        Delay_Between_Shots_In_Burst: 4
+    Reload:
+        Enable: true
+        Reload_Amount: 30
+        Take_Ammo_On_Reload: true
+        Reload_Duration: 50
+        Sounds_Out_Of_Ammo: ITEM_BREAK-2-1-0
+        Sounds_Reloading: FIRE_IGNITE-2-1-4,DOOR_OPEN-2-2-6,FIRE_IGNITE-2-1-36,HURT_FLESH-2-0-37,DOOR_CLOSE-2-2-38
+    Firearm_Action:
+        Type: slide
+        Close_Duration: 10
+        Sound_Close: PISTON_RETRACT-1-2-0,PISTON_RETRACT-1-2-3
+    Scope:
+        Enable: true
+        Zoom_Amount: 6
+        Zoom_Bullet_Spread: 0
+        Sounds_Toggle_Zoom: ENDERDRAGON_WINGS-2-2-0
+    Abilities:
+        Reset_Hit_Cooldown: true
+    Hit_Events:
+        Enable: true
+        Sounds_Shooter: SHOOT_ARROW-2-2-0
+AUG:
+    Item_Information:
+        Item_Name: "&eAUG"
+        Item_Type: 104
+        Item_Lore: "&eFully automatic with medium power.|&eEffective at any range."
+        Sounds_Acquired: BAT_TAKEOFF-1-1-0
+    SignShops:
+        Enable: true
+        Price: 266-4
+        Sign_Gun_ID: 26
+    Shooting:
+        Right_Click_To_Shoot: true
+        Cancel_Left_Click_Block_Damage: true
+        Delay_Between_Shots: 3
+        Recoil_Amount: 1
+        Projectile_Amount: 1
+        Projectile_Type: snowball
+        Projectile_Speed: 100
+        Projectile_Damage: 4
+        Bullet_Spread: 1
+        Sounds_Shoot: IRONGOLEM_HIT-2-2-0,SKELETON_HURT-2-2-0,PISTON_RETRACT-1-2-0,ITEM_BREAK-2-1-0
+    Sneak:
+        Enable: true
+        No_Recoil: true
+        Bullet_Spread: 1
+    Burstfire:
+        Enable: true
+        Shots_Per_Burst: 2
+        Delay_Between_Shots_In_Burst: 4
+    Reload:
+        Enable: true
+        Reload_Amount: 30
+        Take_Ammo_On_Reload: true
+        Reload_Duration: 50
+        Sounds_Out_Of_Ammo: ITEM_BREAK-2-1-0
+        Sounds_Reloading: FIRE_IGNITE-2-1-4,DOOR_OPEN-2-2-6,FIRE_IGNITE-2-1-36,HURT_FLESH-2-0-37,DOOR_CLOSE-2-2-38
+    Firearm_Action:
+        Type: slide
+        Close_Duration: 10
+        Sound_Close: PISTON_RETRACT-1-2-0,PISTON_RETRACT-1-2-3
+    Scope:
+        Enable: true
+        Zoom_Amount: 8
+        Zoom_Bullet_Spread: 0
+        Sounds_Toggle_Zoom: ENDERDRAGON_WINGS-2-2-0
+    Abilities:
+        Reset_Hit_Cooldown: true
+    Hit_Events:
+        Enable: true
+        Sounds_Shooter: SHOOT_ARROW-2-2-0
+
+BAR:
+    Item_Information:
+        Enchantment_To_Check: SILK_TOUCH-100
+        Item_Name: "BAR Browning"
+        Item_Type: 286
+        Item_Lore: "Automatique avec une grosse puissance de feu|Effectif a toute les distances !"
+        Sounds_Acquired: BAT_TAKEOFF-1-1-0
+    Shooting:
+        Remove_Bullet_Drop: true
+        Right_Click_To_Shoot: true
+        Cancel_Left_Click_Block_Damage: true
+        Delay_Between_Shots: 2
+        Projectile_Amount: 1
+        Projectile_Type: snowball
+        Projectile_Speed: 20
+        Projectile_Damage: 8
+        Bullet_Spread: 0.3
+        Sounds_Shoot: BLAZE_BREATH-1-1-0
+    Particles:
+        Enable: true
+        Particle_Terrain: true
+    Sneak:
+        Enable: true
+        No_Recoil: true
+        Bullet_Spread: 0.2
+    Reload:
+        Sounds_Reloading: ENDERDRAGON_GROWL-3-1-0
+        Enable: true
+        Reload_Amount: 50
+        Take_Ammo_On_Reload: true
+        Take_Ammo_As_Magazine: True
+        Reload_Duration: 40
+        Sounds_Out_Of_Ammo: ITEM_BREAK-2-1-0
+    Ammo:
+        Ammo_Item_ID: 378
+        Enable: True
+        Sounds_Out_Of_Ammo: NOTE_PLING-2-2-0
+        Sounds_Shoot_With_No_Ammo: NOTE_STICKS-2-2-0
+    Firearm_Action:
+        Type: slide
+        Close_Duration: 10
+    Scope:
+        Enable: true
+        Zoom_Amount: 5
+        Zoom_Bullet_Spread: 0.2
+        Sounds_Toggle_Zoom: ENDERDRAGON_WINGS-2-2-0
+    Abilities:
+        Reset_Hit_Cooldown: true
+    Hit_Events:
+        Enable: true
+
+Type100:
+    Item_Information:
+        Enchantment_To_Check: SILK_TOUCH-100
+        Item_Name: "Type100"
+        Item_Type: 285
+        Item_Lore: "Totalement automatique et puissant, c'est l'arme idéale"
+        Sounds_Acquired: BAT_TAKEOFF-1-1-0
+    SignShops:
+        Enable: true
+        Price: 266-3
+        Sign_Gun_ID: 28
+    Shooting:
+        Right_Click_To_Shoot: true
+        Cancel_Left_Click_Block_Damage: true
+        Delay_Between_Shots: 3
+        Recoil_Amount: 1
+        Projectile_Amount: 1
+        Projectile_Type: snowball
+        Projectile_Speed: 39
+        Projectile_Damage: 5
+        Bullet_Spread: 1
+        Sounds_Shoot: IRONGOLEM_HIT-2-2-0,SKELETON_HURT-2-2-0,ITEM_BREAK-2-1-0,DOOR_CLOSE-2-2-0
+    Sneak:
+        Enable: true
+        No_Recoil: true
+        Bullet_Spread: 1
+    Ammo:
+        Ammo_Item_ID: 377
+        Enable: True
+    Burstfire:
+        Enable: true
+        Shots_Per_Burst: 2
+        Delay_Between_Shots_In_Burst: 4
+    Reload:
+        Enable: true
+        Reload_Amount: 35
+        Take_Ammo_On_Reload: true
+        Reload_Duration: 40
+        Sounds_Out_Of_Ammo: ITEM_BREAK-2-1-0
+        Sounds_Reloading: FIRE_IGNITE-2-1-4,DOOR_OPEN-2-2-6,FIRE_IGNITE-2-1-36,HURT_FLESH-2-0-37,DOOR_CLOSE-2-2-38
+    Firearm_Action:
+        Type: slide
+        Close_Duration: 10
+        Sound_Close: PISTON_RETRACT-1-2-0,PISTON_RETRACT-1-2-3
+    Scope:
+        Enable: true
+        Zoom_Amount: 5
+        Zoom_Bullet_Spread: 0.2
+        Sounds_Toggle_Zoom: ENDERDRAGON_WINGS-2-2-0
+    Abilities:
+        Reset_Hit_Cooldown: true
+    Hit_Events:
+        Enable: true
+        Sounds_Shooter: SHOOT_ARROW-2-2-0
+
+TrenchGun:
+    Item_Information:
+        Item_Name: "&eTrench Gun"
+        Item_Type: 104
+        Item_Lore: "&eShotgun with high power.|&eIneffective at longer ranges.|&eFires incendiary ammo."
+        Sounds_Acquired: BAT_TAKEOFF-1-1-0
+    SignShops:
+        Enable: true
+        Price: 266-2
+        Sign_Gun_ID: 29
+    Shooting:
+        Cancel_Left_Click_Block_Damage: true
+        Delay_Between_Shots: 3
+        Recoil_Amount: 4
+        Projectile_Amount: 4
+        Projectile_Type: snowball
+        Projectile_Speed: 30
+        Projectile_Damage: 6
+        Projectile_Incendiary:
+            Enable: true
+            Duration: 40
+        Bullet_Spread: 3
+        Reset_Fall_Distance: true
+        Sounds_Shoot: ZOMBIE_WOOD-1-1-0,EXPLODE-2-2-0,GHAST_FIREBALL-2-1-0
+    Sneak:
+        Enable: true
+        No_Recoil: true
+        Bullet_Spread: 3
+    Reload:
+        Enable: true
+        Reload_Amount: 5
+        Reload_Bullets_Individually: true
+        Reload_Duration: 8
+        Sounds_Reloading: NOTE_STICKS-2-1-0,NOTE_SNARE_DRUM-2-6-1
+    Firearm_Action:
+        Type: bolt
+        Open_Duration: 10
+        Close_Duration: 8
+        Sound_Open: DOOR_OPEN-2-2-0
+        Sound_Close: DOOR_CLOSE-2-2-0
+    Abilities:
+        Reset_Hit_Cooldown: true
+        No_Fall_Damage: true
+    Hit_Events:
+        Enable: true
+        Sounds_Shooter: SHOOT_ARROW-2-2-0
+    Scope:
+        Enable: true
+        Zoom_Amount: 5
+        Zoom_Bullet_Spread: 3
+        Sounds_Toggle_Zoom: ENDERDRAGON_WINGS-2-2-0
+    Damage_Based_On_Flight_Time:
+        Enable: true
+        Bonus_Damage_Per_Tick: -1
+    Particles:
+        Enable: true
+        Particle_Player_Shoot: FLAMES-1
+        Particle_Impact_Anything: BLOCK_BREAK-51
+
+Stake-Out:
+    Item_Information:
+        Item_Name: "&eStake-Out"
+        Item_Type: 104
+        Item_Lore: "&eA shotgun deadly at close range that fires incendiary ammo."
+        Sounds_Acquired: BAT_TAKEOFF-1-1-0
+    SignShops:
+        Enable: true
+        Price: 266-3
+        Sign_Gun_ID: 30
+    Shooting:
+        Cancel_Left_Click_Block_Damage: true
+        Delay_Between_Shots: 3
+        Recoil_Amount: 4
+        Projectile_Amount: 6
+        Projectile_Type: snowball
+        Projectile_Speed: 30
+        Projectile_Damage: 7
+        Bullet_Spread: 3
+        Reset_Fall_Distance: true
+        Sounds_Shoot: ZOMBIE_WOOD-1-1-0,EXPLODE-2-2-0,GHAST_FIREBALL-2-1-0
+    Sneak:
+        Enable: true
+        No_Recoil: true
+        Bullet_Spread: 2
+    Reload:
+        Enable: true
+        Reload_Amount: 5
+        Reload_Bullets_Individually: true
+        Reload_Duration: 7
+        Sounds_Reloading: NOTE_STICKS-2-1-0,NOTE_SNARE_DRUM-2-6-1
+    Firearm_Action:
+        Type: bolt
+        Open_Duration: 5
+        Close_Duration: 4
+        Sound_Open: NOTE_STICKS-2-0-0,PISTON_RETRACT-2-2-2
+        Sound_Close: PISTON_EXTEND-2-2-0
+    Abilities:
+        Reset_Hit_Cooldown: true
+        No_Fall_Damage: true
+    Hit_Events:
+        Enable: true
+        Sounds_Shooter: SHOOT_ARROW-2-2-0
+    Scope:
+        Enable: true
+        Zoom_Amount: 5
+        Zoom_Bullet_Spread: 3
+        Sounds_Toggle_Zoom: ENDERDRAGON_WINGS-2-2-0
+    Damage_Based_On_Flight_Time:
+        Enable: true
+        Bonus_Damage_Per_Tick: -1
+    Particles:
+        Enable: true
+        Particle_Player_Shoot: FLAMES-1
+        Particle_Impact_Anything: BLOCK_BREAK-51
+
+MP5:
+    Item_Information:
+        Item_Name: "&eMP5"
+        Item_Type: 104
+        Item_Lore: "&eFully automatic with medium power.|&eEffective at close-medium range."
+        Sounds_Acquired: BAT_TAKEOFF-1-1-0
+    SignShops:
+        Enable: true
+        Price: 266-3
+        Sign_Gun_ID: 31
+    Shooting:
+        Right_Click_To_Shoot: true
+        Cancel_Left_Click_Block_Damage: true
+        Delay_Between_Shots: 2
+        Recoil_Amount: 0
+        Projectile_Amount: 2
+        Projectile_Type: snowball
+        Projectile_Speed: 45
+        Projectile_Damage: 2
+        Bullet_Spread: 1
+        Sounds_Shoot: IRONGOLEM_HIT-2-2-0,SKELETON_HURT-2-2-0,ZOMBIE_WOOD-1-2-0
+    Sneak:
+        Enable: true
+        No_Recoil: true
+        Bullet_Spread: 1
+    Burstfire:
+        Enable: true
+        Shots_Per_Burst: 2
+        Delay_Between_Shots_In_Burst: 2
+    Reload:
+        Enable: true
+        Reload_Amount: 25
+        Take_Ammo_On_Reload: true
+        Reload_Duration: 40
+        Sounds_Out_Of_Ammo: ITEM_BREAK-2-1-0
+        Sounds_Reloading: FIRE_IGNITE-2-1-4,DOOR_OPEN-2-2-6,FIRE_IGNITE-2-1-36,HURT_FLESH-2-0-37,DOOR_CLOSE-2-2-38
+    Firearm_Action:
+        Type: slide
+        Close_Duration: 10
+        Sound_Close: PISTON_RETRACT-1-2-0,PISTON_RETRACT-1-2-3
+    Scope:
+        Enable: true
+        Zoom_Amount: 6
+        Zoom_Bullet_Spread: 0
+        Sounds_Toggle_Zoom: ENDERDRAGON_WINGS-2-2-0
+    Abilities:
+        Reset_Hit_Cooldown: true
+    Hit_Events:
+        Enable: true
+        Sounds_Shooter: SHOOT_ARROW-2-2-0
+
+PM63:
+    Item_Information:
+        Item_Name: "&ePM63"
+        Item_Type: 104
+        Item_Lore: "&eFully automatic with high power.|&eEffective at close-medium range."
+        Sounds_Acquired: BAT_TAKEOFF-1-1-0
+    SignShops:
+        Enable: true
+        Price: 266-3
+        Sign_Gun_ID: 32
+    Shooting:
+        Right_Click_To_Shoot: true
+        Cancel_Left_Click_Block_Damage: true
+        Delay_Between_Shots: 2
+        Recoil_Amount: 1
+        Projectile_Amount: 1
+        Projectile_Type: snowball
+        Projectile_Speed: 45
+        Projectile_Damage: 3
+        Bullet_Spread: 1
+        Sounds_Shoot: IRONGOLEM_HIT-2-2-0,SKELETON_HURT-2-2-0,ZOMBIE_WOOD-1-2-0,PISTON_RETRACT-1-2-0
+    Sneak:
+        Enable: true
+        No_Recoil: true
+        Bullet_Spread: 1
+    Burstfire:
+        Enable: true
+        Shots_Per_Burst: 2
+        Delay_Between_Shots_In_Burst: 4
+    Reload:
+        Enable: true
+        Reload_Amount: 20
+        Take_Ammo_On_Reload: true
+        Reload_Duration: 36
+        Sounds_Out_Of_Ammo: ITEM_BREAK-2-1-0
+        Sounds_Reloading: FIRE_IGNITE-2-1-4,DOOR_OPEN-2-2-6,FIRE_IGNITE-2-1-36,HURT_FLESH-2-0-37,DOOR_CLOSE-2-2-38
+    Firearm_Action:
+        Type: slide
+        Close_Duration: 10
+        Sound_Close: PISTON_RETRACT-1-2-0,PISTON_RETRACT-1-2-3
+    Scope:
+        Enable: true
+        Zoom_Amount: 6
+        Zoom_Bullet_Spread: 0
+        Sounds_Toggle_Zoom: ENDERDRAGON_WINGS-2-2-0
+    Abilities:
+        Reset_Hit_Cooldown: true
+    Hit_Events:
+        Enable: true
+        Sounds_Shooter: SHOOT_ARROW-2-2-0
+
+Dragunov:
+    Item_Information:
+        Item_Name: "&eDragunov"
+        Item_Type: 294
+        Item_Lore: "&eBolt-action sniper rifle.|&eDeals triple damage on headshots."
+        Sounds_Acquired: BAT_TAKEOFF-1-1-0
+    SignShops:
+        Enable: true
+        Price: 266-4
+        Sign_Gun_ID: 33
+    Shooting:
+        Cancel_Left_Click_Block_Damage: true
+        Recoil_Amount: 5
+        Projectile_Amount: 1
+        Projectile_Type: snowball
+        Projectile_Speed: 90
+        Projectile_Damage: 8
+        Bullet_Spread: 3
+        Reset_Fall_Distance: true
+        Sounds_Shoot: BLAZE_HIT-2-1-0,EXPLODE-2-50-0
+    Sneak:
+        Enable: true
+        No_Recoil: true
+        Bullet_Spread: 3
+    Custom_Death_Message:
+        Normal: "&e<victim> was sniped by <shooter>!"
+    Reload:
+        Enable: true
+        Reload_Amount: 5
+        Reload_Bullets_Individually: true
+        Take_Ammo_On_Reload: false
+        Reload_Duration: 10
+        Sounds_Reloading: NOTE_STICKS-2-1-0
+    Firearm_Action:
+        Type: bolt
+        Open_Duration: 8
+        Close_Duration: 6
+        Sound_Open: NOTE_STICKS-2-0-0,PISTON_RETRACT-2-2-2
+        Sound_Close: PISTON_EXTEND-2-2-0
+    Headshot:
+        Enable: true
+        Bonus_Damage: 24
+        Sounds_Shooter: NOTE_PLING-2-2-0
+        Sounds_Victim: HURT-2-1-0
+    Abilities:
+        Reset_Hit_Cooldown: true
+        Knockback: 3
+    Particles:
+        Enable: true
+        Particle_Player_Shoot: BLOCK_BREAK-1
+    Scope:
+        Enable: true
+        Night_Vision: true
+        Zoom_Amount: 9
+        Zoom_Bullet_Spread: 0
+        Sounds_Toggle_Zoom: ENDERDRAGON_WINGS-2-2-0,NOTE_PLING-2-2-0
+    Hit_Events:
+        Enable: true
+        Sounds_Shooter: SHOOT_ARROW-2-2-0
+
+MP40:
+    Item_Information:
+        Item_Name: "&eMP40"
+        Item_Type: 104
+        Item_Lore: "&eFully automatic with high power.|&eEffective at medium range."
+        Sounds_Acquired: BAT_TAKEOFF-1-1-0
+    SignShops:
+        Enable: true
+        Price: 266-3
+        Sign_Gun_ID: 34
+    Shooting:
+        Right_Click_To_Shoot: true
+        Cancel_Left_Click_Block_Damage: true
+        Delay_Between_Shots: 4
+        Recoil_Amount: 0
+        Projectile_Amount: 1
+        Projectile_Type: snowball
+        Projectile_Speed: 60
+        Projectile_Damage: 4
+        Bullet_Spread: 1
+        Sounds_Shoot: IRONGOLEM_HIT-2-2-0,SKELETON_HURT-2-2-0,ZOMBIE_WOOD-1-2-0,DOOR_CLOSE-2-2-0
+    Sneak:
+        Enable: true
+        No_Recoil: true
+        Bullet_Spread: 2
+    Burstfire:
+        Enable: true
+        Shots_Per_Burst: 2
+        Delay_Between_Shots_In_Burst: 3
+    Reload:
+        Enable: true
+        Reload_Amount: 32
+        Take_Ammo_On_Reload: true
+        Reload_Duration: 36
+        Sounds_Out_Of_Ammo: ITEM_BREAK-2-1-0
+        Sounds_Reloading: FIRE_IGNITE-2-1-4,DOOR_OPEN-2-2-6,FIRE_IGNITE-2-1-36,HURT_FLESH-2-0-37,DOOR_CLOSE-2-2-38
+    Firearm_Action:
+        Type: slide
+        Close_Duration: 10
+        Sound_Close: PISTON_RETRACT-1-2-0,PISTON_RETRACT-1-2-3
+    Scope:
+        Enable: true
+        Zoom_Amount: 6
+        Zoom_Bullet_Spread: 0
+        Sounds_Toggle_Zoom: ENDERDRAGON_WINGS-2-2-0
+    Abilities:
+        Reset_Hit_Cooldown: true
+    Hit_Events:
+        Enable: true
+        Sounds_Shooter: SHOOT_ARROW-2-2-0
+
+
+
+Makarov:
+    Item_Information:
+        Item_Name: "&bMakarov PM"
+        Item_Type: 290
+        Item_Lore: "&cRequires pistol ammo|&aDeals bonus damage on headshots."
+        Sounds_Acquired: BAT_TAKEOFF-1-1-0
+        Skip_Name_Check: false
+        Item_Has_Durability: true
+    Shooting:
+        Cancel_Left_Click_Block_Damage: true
+        Delay_Between_Shots: 1
+        Projectile_Amount: 1
+        Projectile_Type: snowball
+        Projectile_Speed: 50
+        Projectile_Damage: 3
+        Bullet_Spread: 2
+        Sounds_Shoot: IRONGOLEM_HIT-2-2-0,ZOMBIE_METAL-2-2-0
+    Sneak:
+        Enable: true
+        No_Recoil: true
+        Bullet_Spread: 1
+    Custom_Death_Message:
+        Normal: "&4<victim> was shot by &a<shooter>'s &b&lMakarov"
+    Reload:
+        Enable: true
+        Reload_Amount: 8
+        Reload_Duration: 45
+        Take_Ammo_On_Reload: true
+        Sounds_Reloading: LEVEL_UP-2-2-10,FIRE_IGNITE-2-2-38
+    Ammo:
+        Enable: true
+        Ammo_Item_ID: 361
+        Take_Ammo_Per_Shot: false
+        Sounds_Out_Of_Ammo: NOTE_PLING-2-2-0
+        Sounds_Shoot_With_No_Ammo: NOTE_STICKS-2-2-0
+    Firearm_Action:
+        Type: revolver
+        Open_Duration: 5
+        Close_Duration: 5
+        Sound_Open: DOOR_OPEN-2-2-0
+        Sound_Close: DOOR_CLOSE-2-2-0
+    Abilities:
+        Reset_Hit_Cooldown: true
+    Hit_Events:
+        Enable: true
+        Sounds_Shooter: SHOOT_ARROW-2-2-0
+    Scope:
+        Enable: true
+        Zoom_Amount: 4
+        Zoom_Bullet_Spread: 0
+        Sounds_Toggle_Zoom: ENDERDRAGON_WINGS-2-2-0
+    Headshot:
+        Enable: true
+        Bonus_Damage: 4
+        Sounds_Shooter: NOTE_SNARE_DRUM-2-2-0,NOTE_STICKS-2-2-1
+        Sounds_Victim: SLIME_WALK-2-1-0,SKELETON_HURT-2-2-1
+    Particles:
+        Enable: true
+        Particle_Player_Shoot: block_break-1
+        Particle_Impact_Anything: smoke
+        Particle_Hit: block_break-55
+        Particle_Headshot: block_break-46
+
+
+
+G17:
+    Item_Information:
+        Item_Name: "&bGlock 17"
+        Item_Type: 104
+        Item_Lore: "&CConsumes pistol ammo|&cDeals bonus damage on headshots."
+        Sounds_Acquired: BAT_TAKEOFF-1-1-0
+        Item_Has_Durability: true
+        Skip_Name_Check: false
+    Shooting:
+        Cancel_Left_Click_Block_Damage: true
+        Delay_Between_Shots: 2
+        Recoil_Amount: 1
+        Projectile_Amount: 1
+        Projectile_Type: snowball
+        Projectile_Speed: 50
+        Projectile_Damage: 3
+        Bullet_Spread: 1
+        Sounds_Shoot: IRONGOLEM_HIT-2-2-0,ZOMBIE_METAL-2-5-0,BLAZE_HIT-2-1-0
+    Sneak:
+        Enable: true
+        No_Recoil: true
+        Bullet_Spread: 0
+    Custom_Death_Message:
+        Normal: "&4<victim> was shot by &a<shooter>'s &b&lM9"
+    Ammo:
+        Enable: true
+        Ammo_Item_ID: 361
+        Take_Ammo_Per_Shot: false
+        Sounds_Out_Of_Ammo: NOTE_PLING-2-2-0
+        Sounds_Shoot_With_No_Ammo: NOTE_STICKS-2-2-0
+    Reload:
+        Enable: true
+        Reload_Amount: 20
+        Take_Ammo_On_Reload: true
+        Reload_Duration: 25
+        Sounds_Reloading: LEVEL_UP-2-2-10,FIRE_IGNITE-2-2-38
+    Firearm_Action:
+        Type: slide
+        Open_Duration: 7
+        Close_Duration: 7
+        Sound_Open: DOOR_OPEN-2-2-0
+        Sound_Close: DOOR_CLOSE-2-2-0
+    Abilities:
+        Reset_Hit_Cooldown: true
+    Hit_Events:
+        Enable: true
+        Sounds_Shooter: SHOOT_ARROW-2-2-0
+    Scope:
+        Enable: true
+        Zoom_Amount: 7
+        Night_Vision: true
+        Zoom_Bullet_Spread: 0
+        Sounds_Toggle_Zoom: ENDERDRAGON_WINGS-2-2-0,CAT_HISS-2-1-1
+    Headshot:
+        Enable: true
+        Bonus_Damage: 4
+        Sounds_Shooter: NOTE_SNARE_DRUM-2-2-0,NOTE_STICKS-2-2-1
+        Sounds_Victim: SLIME_WALK-2-1-0,SKELETON_HURT-2-2-1
+    Potion_Effects:
+        Activation: head
+        Potion_Effect_Victim: SLOW-1200-3,WEAKNESS-60-1
+    Particles:
+        Enable: true
+        Particle_Player_Shoot: block_break-98
+        Particle_Impact_Anything: smoke
+        Particle_Hit: block_break-55
+        Particle_Headshot: block_break-46
+
+NVD:
+    Item_Information:
+        Item_Name: "&aNight Vision Device"
+        Item_Type: 104
+        Item_Lore: "&aStandard night vision device"
+        Sounds_Acquired: BAT_TAKEOFF-1-1-0
+        Item_Has_Durability: true
+        Skip_Name_Check: false
+    Shooting:
+        Cancel_Left_Click_Block_Damage: true
+    Scope:
+        Enable: true
+        Night_Vision: true
+        Zoom_Amount: 1
+        Sounds_Toggle_Zoom: ENDERDRAGON_WINGS-2-4-0,WITHER_SHOOT-2-4-0
+
+
+
+DMR:
+    Item_Information:
+        Item_Name: "&CDMR"
+        Item_Type: 294
+        Item_Lore: "&cRequires sniper rounds|&aDeals extra damage on headshots."
+        Item_Has_Durability: true
+        Skip_Name_Check: false
+        Sounds_Acquired: BAT_TAKEOFF-1-1-0
+    Shooting:
+        Cancel_Left_Click_Block_Damage: true
+        Recoil_Amount: 7
+        Projectile_Amount: 1
+        Projectile_Type: snowball
+        Projectile_Speed: 60
+        Projectile_Damage: 8
+        Bullet_Spread: 2
+        Reset_Fall_Distance: true
+        Sounds_Shoot: BLAZE_HIT-2-1-0,EXPLODE-2-50-0
+    Sneak:
+        Enable: true
+        No_Recoil: true
+        Bullet_Spread: 1
+    Custom_Death_Message:
+        Normal: "&4<victim>&7 was sniped by &a<shooter>'s &c&lDMR!"
+    Reload:
+        Enable: true
+        Reload_Amount: 20
+        Reload_Bullets_Individually: false
+        Take_Ammo_On_Reload: true
+        Reload_Duration: 40
+        Sounds_Reloading: NOTE_STICKS-2-1-0
+    Firearm_Action:
+        Type: bolt
+        Open_Duration: 8
+        Close_Duration: 7
+        Sound_Open: NOTE_STICKS-2-0-0,PISTON_RETRACT-2-2-2
+        Sound_Close: PISTON_EXTEND-2-2-0
+    Headshot:
+        Enable: true
+        Bonus_Damage: 10
+        Sounds_Shooter: NOTE_PLING-2-2-0
+        Sounds_Victim: HURT-2-1-0
+        Message_Victim: "&cHelp..."
+    Abilities:
+        Reset_Hit_Cooldown: true
+        Knockback: 4
+    Particles:
+        Enable: true
+        Particle_Player_Shoot: BLOCK_BREAK-49
+        Particle_Impact_Anything: smoke
+        Particle_Hit: block_break-55
+        Particle_Headshot: block_break-46
+    Fireworks:
+        Enable: true
+        Firework_Headshot: STAR-TRUE-TRUE-200-80-10
+    Scope:
+        Enable: true
+        Night_Vision: false
+        Zoom_Amount: 7
+        Zoom_Bullet_Spread: 0
+        Sounds_Toggle_Zoom: ENDERDRAGON_WINGS-2-2-0
+    Potion_Effects:
+        Activation: head
+        Potion_Effect_Victim: SLOW-1200-3,WEAKNESS-120-1,BLINDNESS-60-1
+    Hit_Events:
+        Enable: true
+        Sounds_Shooter: SHOOT_ARROW-2-2-0
+    Ammo:
+        Enable: true
+        Ammo_Item_ID: 337
+        Sounds_Out_Of_Ammo: NOTE_PLING-2-2-0
+        Sounds_Shoot_With_No_Ammo: NOTE_STICKS-2-2-0
+
+CZ550:
+    Item_Information:
+        Item_Name: "&cCZ 550"
+        Item_Type: 294
+        Item_Lore: "&cRequires sniper rounds|&aDeals extra damage on headshots."
+        Item_Has_Durability: true
+        Skip_Name_Check: false
+        Sounds_Acquired: BAT_TAKEOFF-1-1-0
+    Shooting:
+        Cancel_Left_Click_Block_Damage: true
+        Recoil_Amount: 8
+        Projectile_Amount: 1
+        Projectile_Type: snowball
+        Projectile_Speed: 60
+        Projectile_Damage: 12
+        Bullet_Spread: 2
+        Reset_Fall_Distance: true
+        Sounds_Shoot: BLAZE_HIT-2-1-0,EXPLODE-2-50-0
+    Sneak:
+        Enable: true
+        No_Recoil: true
+        Bullet_Spread: 1
+    Custom_Death_Message:
+        Normal: "&4<victim>&7 was sniped by &a<shooter>'s &c&lCZ 550!"
+    Reload:
+        Enable: true
+        Reload_Amount: 5
+        Reload_Bullets_Individually: true
+        Take_Ammo_On_Reload: true
+        Reload_Duration: 10
+        Sounds_Reloading: NOTE_STICKS-2-1-0
+    Firearm_Action:
+        Type: bolt
+        Open_Duration: 8
+        Close_Duration: 7
+        Sound_Open: NOTE_STICKS-2-0-0,PISTON_RETRACT-2-2-2
+        Sound_Close: PISTON_EXTEND-2-2-0
+    Headshot:
+        Enable: true
+        Bonus_Damage: 12
+        Sounds_Shooter: NOTE_PLING-2-2-0
+        Sounds_Victim: HURT-2-1-0
+        Message_Victim: "&cHelp..."
+    Abilities:
+        Reset_Hit_Cooldown: true
+        Knockback: 8
+    Particles:
+        Enable: true
+        Particle_Player_Shoot: BLOCK_BREAK-50
+        Particle_Impact_Anything: smoke
+        Particle_Hit: block_break-55
+        Particle_Headshot: block_break-46
+    Fireworks:
+        Enable: true
+        Firework_Headshot: BURST-FALSE-TRUE-200-80-10
+    Scope:
+        Enable: true
+        Night_Vision: false
+        Zoom_Amount: 8
+        Zoom_Bullet_Spread: 0
+        Sounds_Toggle_Zoom: ENDERDRAGON_WINGS-2-2-0
+    Potion_Effects:
+        Activation: head
+        Potion_Effect_Victim: SLOW-1200-3,WEAKNESS-120-1,BLINDNESS-60-1
+    Hit_Events:
+        Enable: true
+        Sounds_Shooter: SHOOT_ARROW-2-2-0
+    Ammo:
+        Enable: true
+        Ammo_Item_ID: 337
+        Sounds_Out_Of_Ammo: NOTE_PLING-2-2-0
+        Sounds_Shoot_With_No_Ammo: NOTE_STICKS-2-2-0
+
+M107:
+    Item_Information:
+        Item_Name: "&4M107"
+        Item_Type: 294
+        Item_Lore: "&cRequires sniper rounds|&aDeals extra damage on headshots."
+        Item_Has_Durability: true
+        Skip_Name_Check: false
+        Sounds_Acquired: BAT_TAKEOFF-1-1-0
+    Shooting:
+        Cancel_Left_Click_Block_Damage: true
+        Recoil_Amount: 12
+        Projectile_Amount: 1
+        Projectile_Type: snowball
+        Projectile_Speed: 70
+        Projectile_Damage: 16
+        Bullet_Spread: 1
+        Reset_Fall_Distance: true
+        Sounds_Shoot: BLAZE_HIT-2-1-0,EXPLODE-2-50-0,HURT_FLESH-2-50-0
+    Sneak:
+        Enable: true
+        No_Recoil: true
+        Bullet_Spread: 0
+    Custom_Death_Message:
+        Normal: "&4<victim>&7 was sniped by &a<shooter>'s &4&lM107!"
+    Reload:
+        Enable: true
+        Reload_Amount: 5
+        Reload_Bullets_Individually: true
+        Take_Ammo_On_Reload: true
+        Reload_Duration: 10
+        Sounds_Reloading: NOTE_STICKS-2-1-0
+    Firearm_Action:
+        Type: bolt
+        Open_Duration: 8
+        Close_Duration: 7
+        Sound_Open: NOTE_STICKS-2-0-0,PISTON_RETRACT-2-2-2
+        Sound_Close: PISTON_EXTEND-2-2-0
+    Headshot:
+        Enable: true
+        Bonus_Damage: 12
+        Sounds_Shooter: NOTE_PLING-2-2-0
+        Sounds_Victim: HURT-2-1-0
+        Message_Victim: "&cI... I need help now!"
+    Abilities:
+        Reset_Hit_Cooldown: true
+        Knockback: 8
+    Particles:
+        Enable: true
+        Particle_Player_Shoot: BLOCK_BREAK-50
+        Particle_Impact_Anything: smoke
+        Particle_Hit: block_break-55
+        Particle_Headshot: block_break-46
+    Fireworks:
+        Enable: true
+        Firework_Headshot: BURST-FALSE-TRUE-200-80-10
+    Scope:
+        Enable: true
+        Night_Vision: false
+        Zoom_Amount: 8
+        Zoom_Bullet_Spread: 0
+        Sounds_Toggle_Zoom: ENDERDRAGON_WINGS-2-2-0
+    Potion_Effects:
+        Activation: head
+        Potion_Effect_Victim: SLOW-1200-3,WEAKNESS-120-1,BLINDNESS-60-1
+    Hit_Events:
+        Enable: true
+        Sounds_Shooter: SHOOT_ARROW-2-2-0
+    Ammo:
+        Enable: true
+        Ammo_Item_ID: 337
+        Sounds_Out_Of_Ammo: NOTE_PLING-2-2-0
+        Sounds_Shoot_With_No_Ammo: NOTE_STICKS-2-2-0
+
+AS50:
+    Item_Information:
+        Item_Name: "&4AS50"
+        Item_Type: 294
+        Item_Lore: "&cRequires sniper rounds|&aDeals extra damage on headshots"
+        Item_Has_Durability: true
+        Skip_Name_Check: false
+        Sounds_Acquired: BAT_TAKEOFF-1-1-0
+    Shooting:
+        Cancel_Left_Click_Block_Damage: true
+        Recoil_Amount: 12
+        Projectile_Amount: 1
+        Projectile_Type: snowball
+        Projectile_Speed: 80
+        Projectile_Damage: 20
+        Bullet_Spread: 0
+        Reset_Fall_Distance: true
+        Sounds_Shoot: BLAZE_HIT-4-10-0,EXPLODE-4-50-0,
+    Sneak:
+        Enable: true
+        No_Recoil: true
+        Bullet_Spread: 0
+    Custom_Death_Message:
+        Normal: "&4<victim>&7 was sniped by &a<shooter>'s &4&lAS50!"
+    Reload:
+        Enable: true
+        Reload_Amount: 8
+        Take_Ammo_On_Reload: true
+        Reload_Duration: 50
+        Sounds_Reloading: NOTE_STICKS-2-1-0
+    Firearm_Action:
+        Type: bolt
+        Open_Duration: 8
+        Close_Duration: 7
+        Sound_Open: NOTE_STICKS-2-0-0,PISTON_RETRACT-2-2-2
+        Sound_Close: PISTON_EXTEND-2-2-0
+    Headshot:
+        Enable: true
+        Bonus_Damage: 12
+        Sounds_Shooter: NOTE_PLING-2-2-0
+        Sounds_Victim: HURT-2-1-0
+        Message_Victim: "&cThis is it..."
+    Abilities:
+        Reset_Hit_Cooldown: true
+        Knockback: 8
+    Particles:
+        Enable: true
+        Particle_Player_Shoot: BLOCK_BREAK-50
+        Particle_Impact_Anything: smoke
+        Particle_Hit: block_break-55
+        Particle_Headshot: block_break-46
+    Fireworks:
+        Enable: true
+        Firework_Headshot: BURST-FALSE-TRUE-200-80-10
+    Scope:
+        Enable: true
+        Night_Vision: false
+        Zoom_Amount: 8
+        Zoom_Bullet_Spread: 0
+        Sounds_Toggle_Zoom: ENDERDRAGON_WINGS-2-2-0
+    Potion_Effects:
+        Activation: head
+        Potion_Effect_Victim: SLOW-1200-3,WEAKNESS-120-1,BLINDNESS-60-1,HUNGER-1200-2,CONFUSION-60-1
+    Hit_Events:
+        Enable: true
+        Sounds_Shooter: SHOOT_ARROW-2-2-0
+    Ammo:
+        Enable: true
+        Ammo_Item_ID: 337
+        Sounds_Out_Of_Ammo: NOTE_PLING-2-2-0
+        Sounds_Shoot_With_No_Ammo: NOTE_STICKS-2-2-0
+
+Crossbow:
+    Item_Information:
+        Item_Name: "&5Crossbow"
+        Item_Type: 104
+        Item_Lore: "&CConsumes crossbow bolts|&aSilent"
+        Sounds_Acquired: BAT_TAKEOFF-1-1-0
+        Item_Has_Durability: true
+        Skip_Name_Check: false
+    Shooting:
+        Cancel_Left_Click_Block_Damage: true
+        Delay_Between_Shots: 0
+        Recoil_Amount: 3
+        Projectile_Amount: 1
+        Projectile_Type: arrow
+        Projectile_Speed: 50
+        Projectile_Damage: 12
+        Bullet_Spread: 1
+        Sounds_Shoot: SHOOT_ARROW-1-2-0
+    Sneak:
+        Enable: true
+        No_Recoil: true
+        Bullet_Spread: 0
+    Custom_Death_Message:
+        Normal: "&4<victim> was shot by &a<shooter>'s &5&lCrossbow"
+    Reload:
+        Enable: true
+        Reload_Amount: 1
+        Take_Ammo_On_Reload: true
+        Reload_Duration: 30
+        Sounds_Reloading: LAVA_POP-2-5-0
+    Firearm_Action:
+        Type: break
+    Abilities:
+        Reset_Hit_Cooldown: true
+    Hit_Events:
+        Enable: true
+        Sounds_Shooter: SHOOT_ARROW-2-2-0
+    Ammo:
+        Enable: true
+        Ammo_Item_ID: 262
+        Sounds_Out_Of_Ammo: NOTE_PLING-2-2-0
+        Sounds_Shoot_With_No_Ammo: NOTE_STICKS-2-2-0
+    Scope:
+        Enable: true
+        Zoom_Amount: 5
+        Zoom_Bullet_Spread: 0
+        Sounds_Toggle_Zoom: ENDERDRAGON_WINGS-2-2-0
+    Particles:
+        Enable: true
+        Particle_Player_Shoot: block_break-1
+        Particle_Impact_Anything: smoke
+        Particle_Hit: block_break-55
+
+Double_shotgun:
+    Item_Information:
+        Item_Name: "&dDouble-barreled Shotgun"
+        Item_Type: 291
+        Item_Lore: "&cRequires shotgun ammo|&9Fires pellets in contrast to slugs"
+        Sounds_Acquired: BAT_TAKEOFF-1-1-0
+        Skip_Name_Check: false
+        Item_Has_Durability: true
+    Shooting:
+        Cancel_Left_Click_Block_Damage: true
+        Delay_Between_Shots: 3
+        Recoil_Amount: 4
+        Projectile_Amount: 2
+        Projectile_Type: snowball
+        Projectile_Speed: 30
+        Projectile_Damage: 4
+        Bullet_Spread: 2
+        Reset_Fall_Distance: true
+        Sounds_Shoot: ZOMBIE_WOOD-1-1-0,EXPLODE-2-2-0,GHAST_FIREBALL-2-1-0
+    Sneak:
+        Enable: true
+        No_Recoil: true
+        Bullet_Spread: 1
+    Reload:
+        Enable: true
+        Reload_Amount: 2
+        Reload_Bullets_Individually: true
+        Take_Ammo_On_Reload: true
+        Reload_Duration: 15
+        Sounds_Reloading: NOTE_STICKS-2-1-0,NOTE_SNARE_DRUM-2-6-1
+    Firearm_Action:
+        Type: break
+        Open_Duration: 10
+        Close_Duration: 15
+        Sound_Open: DOOR_OPEN-2-2-0
+        Sound_Close: DOOR_CLOSE-2-2-0
+    Abilities:
+        Reset_Hit_Cooldown: true
+        No_Fall_Damage: true
+    Hit_Events:
+        Enable: true
+        Sounds_Shooter: SHOOT_ARROW-2-2-0
+    Particles:
+        Enable: true
+        Particle_Player_Shoot: FLAMES-1
+        Particle_Impact_Anything: BLOCK_BREAK-51
+        Particle_Hit: block_break-55
+    Custom_Death_Message:
+        Normal: "&4<victim> was shot by &a<shooter>'s &d&lDouble-barreled Shotgun"
+    Ammo:
+        Enable: true
+        Ammo_Item_ID: 295
+        Sounds_Out_Of_Ammo: NOTE_PLING-2-2-0
+        Sounds_Shoot_With_No_Ammo: NOTE_STICKS-2-2-0
+
+Winchester:
+    Item_Information:
+        Enchantment_To_Check: SILK_TOUCH-100
+        Item_Name: "&5Winchester 1866"
+        Item_Type: 291
+        Item_Lore: "&cRequires shotgun ammo|&9slugs in contrast to pellets"
+        Sounds_Acquired: BAT_TAKEOFF-1-1-0
+        Skip_Name_Check: false
+        Item_Has_Durability: true
+    Shooting:
+
+        Cancel_Left_Click_Block_Damage: true
+        Delay_Between_Shots: 20
+        Recoil_Amount: 2
+        Projectile_Amount: 6
+        Projectile_Type: snowball
+        Projectile_Speed: 40
+        Projectile_Damage: 5
+        Bullet_Spread: 1
+        Reset_Fall_Distance: true
+        Sounds_Shoot: ZOMBIE_WOOD-4-4-0,EXPLODE-4-4-0,GHAST_FIREBALL-4-4-0
+    Custom_Death_Message:
+        Normal: "&4<victim> was shot by &a<shooter>'s &5&lWinchester 1866"
+    Scope:
+        Enable: true
+        Zoom_Amount: 4
+        Zoom_Bullet_Spread: 1
+        Sounds_Toggle_Zoom: ENDERDRAGON_WINGS-2-2-0
+    Sneak:
+        Enable: true
+        No_Recoil: true
+        Bullet_Spread: 1
+    Reload:
+        Enable: true
+        Reload_Amount: 15
+        Take_Ammo_On_Reload: true
+        Reload_Bullets_Individually: true
+        Reload_Duration: 15
+        Sounds_Reloading: NOTE_STICKS-2-1-0,NOTE_SNARE_DRUM-2-6-1
+    Firearm_Action:
+        Type: pump
+        Open_Duration: 10
+        Close_Duration: 15
+        Sound_Open: DOOR_OPEN-2-2-0
+        Sound_Close: DOOR_CLOSE-2-2-0
+    Abilities:
+        Reset_Hit_Cooldown: true
+        No_Fall_Damage: true
+    Hit_Events:
+        Enable: true
+        Sounds_Shooter: SHOOT_ARROW-2-2-0
+    Particles:
+        Enable: true
+        Particle_Player_Shoot: FLAMES-1
+        Particle_Impact_Anything: BLOCK_BREAK-51
+        Particle_Hit: block_break-55
+    Ammo:
+        Enable: true
+        Ammo_Item_ID: 352
+        Sounds_Out_Of_Ammo: NOTE_PLING-2-2-0
+        Sounds_Shoot_With_No_Ammo: NOTE_STICKS-2-2-0
+
+M1014:
+    Item_Information:
+        Item_Name: "&dM1014"
+        Item_Type: 291
+        Item_Lore: "&cRequires shotgun ammo|&9Sneaking fires spread shot"
+        Sounds_Acquired: BAT_TAKEOFF-1-1-0
+        Skip_Name_Check: false
+        Item_Has_Durability: true
+    Shooting:
+        Right_Click_To_Shoot: true
+        Cancel_Left_Click_Block_Damage: true
+        Delay_Between_Shots: 30
+        Recoil_Amount: 4
+        Projectile_Amount: 3
+        Projectile_Type: snowball
+        Projectile_Speed: 40
+        Projectile_Damage: 3
+        Bullet_Spread: 0
+        Reset_Fall_Distance: true
+        Sounds_Shoot: ZOMBIE_WOOD-1-1-0,EXPLODE-2-2-0,WITHER_SHOOT-1-1-1
+    Sneak:
+        Enable: true
+        No_Recoil: false
+        Bullet_Spread: 4
+    Reload:
+        Enable: true
+        Reload_Amount: 8
+        Take_Ammo_On_Reload: true
+        Reload_Bullets_Individually: true
+        Reload_Duration: 15
+        Sounds_Reloading: NOTE_STICKS-2-1-0,NOTE_SNARE_DRUM-2-6-1
+    Firearm_Action:
+        Type: break
+        Open_Duration: 10
+        Close_Duration: 15
+        Sound_Open: DOOR_OPEN-2-2-0
+        Sound_Close: DOOR_CLOSE-2-2-0
+    Abilities:
+        Reset_Hit_Cooldown: true
+        No_Fall_Damage: true
+    Hit_Events:
+        Enable: true
+        Sounds_Shooter: SHOOT_ARROW-2-2-0
+    Particles:
+        Enable: true
+        Particle_Player_Shoot: FLAMES-1
+        Particle_Impact_Anything: BLOCK_BREAK-51
+        Particle_Hit: block_break-55
+    Custom_Death_Message:
+        Normal: "&4<victim> was shot by &a<shooter>'s &d&lM1014"
+    Ammo:
+        Enable: true
+        Ammo_Item_ID: 295
+        Sounds_Out_Of_Ammo: NOTE_PLING-2-2-0
+        Sounds_Shoot_With_No_Ammo: NOTE_STICKS-2-2-0
+    Scope:
+        Enable: true
+        Zoom_Amount: 4
+        Zoom_Bullet_Spread: 0
+        Sounds_Toggle_Zoom: ENDERDRAGON_WINGS-2-2-0
+
+Remington:
+    Item_Information:
+        Item_Name: "&dRemington 870"
+        Item_Type: 291
+        Item_Lore: "&9Fires slugs in contrast to pellets"
+        Sounds_Acquired: BAT_TAKEOFF-1-1-0
+        Skip_Name_Check: false
+        Item_Has_Durability: true
+    Shooting:
+        Right_Click_To_Shoot: true
+        Cancel_Left_Click_Block_Damage: true
+        Delay_Between_Shots: 35
+        Recoil_Amount: 4
+        Projectile_Amount: 8
+        Projectile_Type: snowball
+        Projectile_Speed: 30
+        Projectile_Damage: 7
+        Bullet_Spread: 4
+        Reset_Fall_Distance: true
+        Sounds_Shoot: ZOMBIE_WOOD-1-1-0,EXPLODE-2-2-0,WITHER_SHOOT-1-1-1
+    Sneak:
+        Enable: true
+        No_Recoil: true
+        Bullet_Spread: 3
+    Reload:
+        Enable: true
+        Reload_Amount: 8
+        Reload_Bullets_Individually: true
+        Reload_Duration: 15
+        Sounds_Reloading: NOTE_STICKS-2-1-0,NOTE_SNARE_DRUM-2-6-1
+    Firearm_Action:
+        Type: pump
+        Open_Duration: 10
+        Close_Duration: 15
+        Sound_Open: DOOR_OPEN-2-2-0
+        Sound_Close: DOOR_CLOSE-2-2-0
+    Abilities:
+        Reset_Hit_Cooldown: true
+        No_Fall_Damage: true
+    Hit_Events:
+        Enable: true
+        Sounds_Shooter: SHOOT_ARROW-2-2-0
+    Particles:
+        Enable: true
+        Particle_Player_Shoot: FLAMES-1
+        Particle_Impact_Anything: BLOCK_BREAK-51
+        Particle_Hit: block_break-55
+    Custom_Death_Message:
+        Normal: "&4<victim> was shot by &a<shooter>'s &d&lRemington 870"
+    Scope:
+        Enable: true
+        Night_Vision: true
+        Zoom_Amount: 0
+        Zoom_Bullet_Spread: 4
+        Sounds_Toggle_Zoom: NOTE_STICKS-2-0-0,PISTON_RETRACT-2-2-2
+
+
+
+LeeEnfield:
+    Item_Information:
+        Item_Name: "&cLee Enfield"
+        Item_Type: 284
+        Item_Lore: "&cRequires sniper rounds|&cDinner bell."
+        Sounds_Acquired: BAT_TAKEOFF-1-1-0
+        Skip_Name_Check: false
+        Item_Has_Durability: true
+    Shooting:
+        Right_Click_To_Shoot: true
+        Cancel_Left_Click_Block_Damage: true
+        Delay_Between_Shots: 30
+        Recoil_Amount: 7
+        Projectile_Amount: 1
+        Projectile_Type: snowball
+        Projectile_Speed: 39
+        Projectile_Damage: 15
+        Bullet_Spread: 1
+        Reset_Fall_Distance: true
+        Sounds_Shoot: ZOMBIE_WOOD-5-1-0,EXPLODE-5-2-0
+    Sneak:
+        Enable: true
+        No_Recoil: false
+        Bullet_Spread: 4
+
+    Reload:
+        Enable: true
+        Reload_Amount: 10
+        Take_Ammo_On_Reload: true
+        Take_Ammo_As_Magazine: true
+        Reload_Duration:  80
+        Sounds_Reloading: NOTE_STICKS-2-1-0,NOTE_SNARE_DRUM-2-6-1
+    Firearm_Action:
+        Type: slide
+        Open_Duration: 20
+        Close_Duration: 25
+        Sound_Open: DOOR_OPEN-2-2-0
+        Sound_Close: DOOR_CLOSE-2-2-0
+    Abilities:
+        Reset_Hit_Cooldown: true
+        No_Fall_Damage: true
+    Hit_Events:
+        Enable: true
+        Sounds_Shooter: SHOOT_ARROW-2-2-0
+    Particles:
+        Enable: true
+        Particle_Player_Shoot: block_break-1
+        Particle_Impact_Anything: BLOCK_BREAK-51
+        Particle_Hit: block_break-55
+    Custom_Death_Message:
+        Normal: "&4<victim> was shot by &a<shooter>'s &c&lLee Enfield"
+    Ammo:
+        Enable: true
+        Ammo_Item_ID: 351
+        Sounds_Out_Of_Ammo: NOTE_PLING-2-2-0
+
+    Headshot:
+        Enable: true
+        Bonus_Damage: 5
+        Sounds_Shooter: NOTE_PLING-2-2-0
+        Sounds_Victim: HURT-2-1-0
+    Scope:
+        Enable: true
+        Zoom_Amount: 5
+        Zoom_Bullet_Spread: 0
+        Sounds_Toggle_Zoom: ENDERDRAGON_WINGS-2-2-0
+
+M4A1:
+    Item_Information:
+        Item_Name: "&5M4A1"
+        Item_Type: 104
+        Item_Lore: "&cRequires rifle ammo|&aSemi-automatic with three round burst fire"
+        Sounds_Acquired: BAT_TAKEOFF-1-1-0
+        Skip_Name_Check: false
+        Item_Has_Durability: true
+    Shooting:
+        Right_Click_To_Shoot: true
+        Cancel_Left_Click_Block_Damage: true
+        Delay_Between_Shots: 7
+        Recoil_Amount: 4
+        Projectile_Amount: 1
+        Projectile_Type: snowball
+        Projectile_Speed: 35
+        Projectile_Damage: 9
+        Bullet_Spread: 3
+        Sounds_Shoot: ITEM_BREAK-2-2-2,NOTE_SNARE_DRUM-2-0-2
+    Sneak:
+        Enable: true
+        No_Recoil: true
+        Bullet_Spread: 2
+    Burstfire:
+        Enable: true
+        Shots_Per_Burst: 3
+        Delay_Between_Shots_In_Burst: 2
+    Ammo:
+        Enable: true
+        Ammo_Item_ID: 318
+        Sounds_Out_Of_Ammo: NOTE_PLING-2-2-0
+        Sounds_Shoot_With_No_Ammo: NOTE_STICKS-2-2-0
+    Reload:
+        Enable: true
+        Reload_Amount: 30
+        Take_Ammo_On_Reload: true
+        Reload_Duration: 40
+        Sounds_Reloading: FIRE_IGNITE-2-1-4,DOOR_OPEN-2-2-6,FIRE_IGNITE-2-1-36,HURT_FLESH-2-0-37,DOOR_CLOSE-2-2-38
+    Firearm_Action:
+        Type: slide
+        Close_Duration: 10
+        Sound_Close: PISTON_RETRACT-1-2-0,PISTON_RETRACT-1-2-2
+    Scope:
+        Enable: true
+        Zoom_Amount: 5
+        Zoom_Bullet_Spread: 1
+        Sounds_Toggle_Zoom: ENDERDRAGON_WINGS-2-2-0
+    Abilities:
+        Reset_Hit_Cooldown: true
+    Hit_Events:
+        Enable: true
+        Sounds_Shooter: SHOOT_ARROW-2-2-0
+    Headshot:
+        Enable: true
+        Bonus_Damage: 5
+        Sounds_Shooter: NOTE_PLING-2-2-0
+        Sounds_Victim: HURT-2-1-0
+    Particles:
+        Enable: true
+        Particle_Impact_Anything: smoke
+        Particle_Hit: block_break-55
+        Particle_Headshot: block_break-46
+    Custom_Death_Message:
+        Normal: "&4<victim> was shot by &a<shooter>'s &5&lM4A1"
+
+FNFAL:
+    Item_Information:
+        Skip_Name_Check: true
+        Item_Name: "&4FN FAL"
+        Item_Type: 278
+        Item_Lore: "&aFully automatic"
+        Sounds_Acquired: BAT_TAKEOFF-1-1-0
+        Item_Has_Durability: true
+        Skip_Name_Check: false
+    Custom_Death_Message:
+        Normal: "&4<victim>&7 was shot by &a<shooter>'s &4&lFN FAL"
+    Shooting:
+        Right_Click_To_Shoot: true
+        Cancel_Left_Click_Block_Damage: true
+        Delay_Between_Shots: 4
+        Recoil_Amount: 3
+        Projectile_Amount: 1
+        Projectile_Type: snowball
+        Projectile_Speed: 35
+        Projectile_Damage: 20
+        Bullet_Spread: 1
+        Sounds_Shoot: IRONGOLEM_HIT-2-2-0,SKELETON_HURT-2-2-0,ZOMBIE_WOOD-1-2-0
+    Ammo:
+        Enable: true
+        Ammo_Item_ID: 318
+        Sounds_Out_Of_Ammo: NOTE_PLING-2-2-0
+        Sounds_Shoot_With_No_Ammo: NOTE_STICKS-2-2-0
+    Particles:
+        Enable: true
+        Particle_Impact_Anything: smoke
+        Particle_Hit: block_break-55
+        Particle_Headshot: block_break-46
+    Headshot:
+        Enable: true
+        Bonus_Damage: 1
+        Sounds_Shooter: NOTE_PLING-2-2-0
+        Sounds_Victim: HURT-2-1-0
+    Sneak:
+        Enable: true
+        No_Recoil: true
+        Bullet_Spread: 0
+    Burstfire:
+        Enable: true
+        Shots_Per_Burst: 2
+        Delay_Between_Shots_In_Burst: 3
+    Reload:
+        Enable: true
+        Reload_Amount: 20
+        Take_Ammo_On_Reload: true
+        Reload_Duration: 40
+        Sounds_Out_Of_Ammo: ITEM_BREAK-2-1-0
+        Sounds_Reloading: FIRE_IGNITE-2-1-4,DOOR_OPEN-2-2-6,FIRE_IGNITE-2-1-36,HURT_FLESH-2-0-37,DOOR_CLOSE-2-2-38
+    Scope:
+        Enable: true
+        Zoom_Amount: 10
+        Night_Vision: true
+        Zoom_Bullet_Spread: 0
+        Sounds_Toggle_Zoom: ENDERDRAGON_WINGS-2-2-0
+    Firearm_Action:
+        Type: slide
+        Close_Duration: 10
+        Sound_Close: PISTON_RETRACT-1-2-0,PISTON_RETRACT-1-2-3
+    Abilities:
+        Reset_Hit_Cooldown: true
+    Hit_Events:
+        Enable: true
+        Sounds_Shooter: SHOOT_ARROW-2-2-0
+
+APhaserPlus:
+    Item_Information:
+        Item_Name: "&fAPhaser Plus"
+        Item_Type: 117
+        Item_Lore: "&fThird Tier Space Weapon"
+        Sounds_Acquired: NOTE_PLING-2-0-0,NOTE_PLING-2-2-6
+        Hidden_From_List: false
+    Shooting:
+        Disable: false
+        Right_Click_To_Shoot: true
+        Cancel_Left_Click_Block_Damage: true
+        Cancel_Right_Click_Interactions: true
+        Delay_Between_Shots: 150
+        Recoil_Amount: 1
+        Projectile_Amount: 1
+        Projectile_Type: snowball
+        Projectile_Speed: 40
+        Projectile_Damage: 1
+        Projectile_Incendiary:
+            Enable: true
+            Duration: 500
+        Bullet_Spread: 0
+        Reset_Fall_Distance: true
+        Sounds_Shoot: GHAST_SCREAM2-2-2-0,CAT_HISS-2-2-0,FALL_BIG-2-2-0,NOTE_PLING-2-0-0
+    Sneak:
+        Enable: true
+        No_Recoil: true
+        Bullet_Spread: 0
+        Sneak_Before_Shooting: false
+    Burstfire:
+        Enable: true
+        Shots_Per_Burst: 30
+        Delay_Between_Shots_In_Burst: 2
+    Ammo:
+        Enable: true
+    Reload:
+        Enable: true
+        Reload_Amount: 90
+        Reload_Bullets_Individually: false
+        Take_Ammo_On_Reload: false
+        Reload_Duration: 150
+        Sounds_Out_Of_Ammo: FIRE_IGNITE-2-0-0
+        Sounds_Reloading: PISTON_EXTEND-2-0-0,PISTON_RETRACT-2-0-5,PORTAL-2-0-9
+    Headshot:
+        Enable: true
+        Bonus_Damage: 2
+        Sounds_Shooter: NOTE_PLING-2-2-0
+    Abilities:
+        Reset_Hit_Cooldown: true
+    Potion_Effects:
+        Activation: hit
+        Potion_Effect_Victim: BLINDNESS-100-2,SLOW-100-20,CONFUSION-70-4
+    Explosions:
+        Enable: true
+        Knockback: -10
+        Damage_Multiplier: 0
+        Enable_Friendly_Fire: false
+        Enable_Owner_Immunity: true
+        Explosion_No_Damage: true
+        Explosion_No_Grief: true
+        Explosion_Radius: 10
+        Explosion_Delay: 1
+        On_Impact_With_Anything: true
+        Projectile_Activation_Time: 1
+    Scope:
+        Enable: true
+        Night_Vision: true
+        Zoom_Amount: 10
+        Zoom_Bullet_Spread: 0
+        Zoom_Before_Shooting: false
+        Sounds_Toggle_Zoom: NOTE_PLING-1-0-0,NOTE_PLING-1-0-3
+Cake:
+    Item_Information:
+        Item_Name: "&4Trick Cake"
+        Item_Type: 92
+        Item_Lore: "&eLooks like a cake, | &5but when you touch it, | &4BOOM!"
+        Sounds_Aquired: CHICKEN_EGG_POP
+    Shooting:
+        Right_Click_To_Shoot: true
+        Cancel_Right_Click_Interactions: true
+    SignShops:
+        Enable: true
+        Price: 385-1
+        Sign_Gun_Id: 20001
+    Custom_Death_Message:
+        Normal: "<victim> stepped into the battlefield and forgot to bring his metal detector, so he was blasted to the moon by a Care Package!"
+    Explosive_Devices:
+        Enable: true
+        Device_Type: landmine
+        Device_Info: 92
+    Explosions:
+        Enable: true
+        Enable_Friendly_Fire: true
+        Explosion_No_Grief: true
+        Explosion_Radius: 4
+        Sounds_Explode: ENDERDRAGON_DEATH
+    Extras:
+        One_Time_Use: true
+
+Package:
+    Item_Information:
+        Item_Name: "Care Package"
+        Item_Type: 75
+        Item_Lore: "&5Calls in some &4exploding &5cake | &cfrom THE SKY!"
+        Sounds_Aquired: BAT_TAKEOFF
+    Shooting:
+        Right_Click_To_Shoot: true
+        Cancel_Right_Click_Interactions: true
+        Projectile_Type: flare
+        Projectile_Subtype: 75
+    Airstrikes:
+        Enable: true
+        Flare_Activation_Delay: 60
+        Particle_Call_Airstrike: fire
+        Message_Call_Airstrike: "&5You just sent a silver package! What a &4NICE SPONSOR."
+        Block_Type: 92
+        Area: 4
+        Distance_Between_Bombs: 1
+        Height_Dropped: 100
+        Sound_Airstrike: ENDERDRAGON_GROWL
+    Explosions:
+        Enable: true
+        Explosion_No_Grief: true
+        Explosion_Radius: 4
+        Sounds_Explode: ENDERMAN_TELEPORT
+    Extras:
+        One_Time_Use: true
+    SignShops:
+        Enable: true
+        Price: 76-2
+        Sign_Gun_ID: 20002
+    Custom_Death_Message:
+        Normal: "<victim> tried to catch their sponsor <shooter>'s silver parachute but got crushed!"
+USAS-12:
+    Item_Information:
+        Item_Name: "&2Usas-12"
+        Item_Type: 104
+        Item_Lore: "&aFully automatic"
+        Sounds_Acquired: BAT_TAKEOFF-1-1-0
+        Item_Has_Durability: true
+        Skip_Name_Check: false
+    Custom_Death_Message:
+        Normal: "&4<victim>&7 was shot by &a<shooter>'s &4&lUsas-12"
+    Shooting:
+        Right_Click_To_Shoot: true
+        Cancel_Left_Click_Block_Damage: true
+        Delay_Between_Shots: 20
+        Recoil_Amount: 3
+        Projectile_Amount: 5
+        Projectile_Type: snowball
+        Projectile_Speed: 100
+        Projectile_Damage: 10
+        Bullet_Spread: 1
+        Sounds_Shoot: IRONGOLEM_HIT-2-2-0,SKELETON_HURT-2-2-0,ZOMBIE_WOOD-1-2-0
+    Ammo:
+        Enable: false
+        Ammo_Item_ID: 318
+        Sounds_Out_Of_Ammo: NOTE_PLING-2-2-0
+        Sounds_Shoot_With_No_Ammo: NOTE_STICKS-2-2-0
+    Particles:
+        Enable: true
+        Particle_Impact_Anything: smoke
+        Particle_Hit: block_break-55
+        Particle_Headshot: block_break-46
+    Headshot:
+        Enable: true
+        Bonus_Damage: 1
+        Sounds_Shooter: NOTE_PLING-2-2-0
+        Sounds_Victim: HURT-2-1-0
+    Sneak:
+        Enable: true
+        No_Recoil: true
+        Bullet_Spread: 0
+    Burstfire:
+        Enable: true
+        Shots_Per_Burst: 2
+        Delay_Between_Shots_In_Burst: 3
+    Reload:
+        Enable: true
+        Reload_Amount: 20
+        Take_Ammo_On_Reload: true
+        Reload_Duration: 40
+        Sounds_Out_Of_Ammo: ITEM_BREAK-2-1-0
+        Sounds_Reloading: FIRE_IGNITE-2-1-4,DOOR_OPEN-2-2-6,FIRE_IGNITE-2-1-36,HURT_FLESH-2-0-37,DOOR_CLOSE-2-2-38
+    Scope:
+        Enable: true
+        Zoom_Amount: 10
+        Night_Vision: true
+        Zoom_Bullet_Spread: 0
+        Sounds_Toggle_Zoom: ENDERDRAGON_WINGS-2-2-0
+    Firearm_Action:
+        Type: slide
+        Close_Duration: 10
+        Sound_Close: PISTON_RETRACT-1-2-0,PISTON_RETRACT-1-2-3
+    Abilities:
+        Reset_Hit_Cooldown: true
+    Hit_Events:
+        Enable: true
+        Sounds_Shooter: SHOOT_ARROW-2-2-0
+ReallyTaser:
+    Item_Information:
+        Item_Name: "Taser"
+        Item_Type: 417
+        Item_Lore: "Ouch!"
+        Sounds_Acquired: BAT_TAKEOFF-1-1-0
+    Shooting:
+        Right_Click_To_Shoot: true
+        Cancel_Left_Click_Block_Damage: true
+        Cancel_Right_Click_Interactions: true
+        Delay_Between_Shots: 40
+        Projectile_Amount: 2
+        Projectile_Type: grenade
+        Projectile_Speed: 40
+        Projectile_Damage: 0
+        Bullet_Spread: 1
+    Potion_Effects:
+        Potion_Effect_Shooter: SLOW-600000-10,REGENERATION-60000-10
+        Potion_Effect_Victim: REGENERATION-60000-10

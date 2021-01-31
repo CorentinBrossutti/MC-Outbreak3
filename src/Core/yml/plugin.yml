@@ -1,0 +1,45 @@
+name: OutBreak
+main: com.bp389.outbreak.OutbreakMain
+version: v3
+authors:
+- BlackPhantom
+load: STARTUP
+depend: [CrackShot]
+
+commands:
+  outbreak:
+    description: General command of Outbreak
+    aliases:
+      - ob
+      - o
+    usage: /<command> [module] [subcommand] (arguments...)
+
+permissions:
+  # AI module
+  outbreak.ai.vspawner.check:
+    description: Allows to check the status of a virtual spawner
+    default: op
+  outbreak.ai.vspawner.create:
+    description: Allows to create a virtual spawner
+    default: op
+  outbreak.ai.vspawner.delete:
+    description: Allows to delete a virtual spawner
+    default: op
+  # Backpacks module
+  outbreak.backpacks.get:
+    description: Allows the player to get a backpack for himself
+    default: op
+  outbreak.backpacks.give:
+    description: Allows the player to give a backpack to another player
+    default: op
+  # Packs module
+  outbreak.packs.create:
+    description: Allows the player to create loot points
+    default: op
+  outbreak.packs.delete:
+    description: Allows the player to delete loot points (enter deletion mode)
+    default: op
+  # Thirst module
+  outbreak.thirst.no:
+    description: Allows the player to not feel thirst
+    default: op

@@ -1,0 +1,82 @@
+# Base configuration of all modules
+# For booleans, use true or false as values
+# Pour les booléens, utiliser true ou false comme valeurs (ex = enabled: true (activé), enabled: false (désactivé))
+
+# Zombie and spawner AI
+AI:
+  # Module activé ?
+  enabled: true
+  zombies:
+    hearing:
+      # The radius at which the zombies will hear and move towards an explosion
+      # Le rayon dans lequel les zombies vont entendre et bouger vers une explosion
+      explosion_detection_radius: 50.0
+      # The distance at which zombies will hear a gunshot
+      # La distance à laquelle les zombies entendent un tir
+      gunfire_detection_radius: 35.0
+    detection:
+      # Do the zombies need to have a line of sight on the player to chase him ?
+      # Les zombies ont-ils besoin d'avoir une visibilité sur le joueur pour le poursuivre ?
+      need_sight: true
+      # The distance at which zombies will detect a sneaking player
+      # La distance à laquelle les zombies vont détecter un joueur qui se sneak
+      sneak: 7
+      # Same thing for a player that's not sneaking nor spriting
+      # Même chose pour un joueur qui ne sprint ni ne sneak pas
+      normal: 13
+      # Same thing for a player who's sprinting
+      # Même chose pour un joueur qui sprint
+      sprint: 23
+    spawn:
+      # Zombies spawn attenuation factor. Default = 28, higher value = less zombies
+      # Facteur d'atténuation du spawn des zombies. Défaut = 28, une valeur plus élevée = moins de zombies
+      attenuation_factor: 25
+      # Does a zombie spawn when a player dies ? Note the zombie will have the player's equipment (weapon and clothing)
+      # Un zombie spawne-t-il quand un joueur meurt ? Le zombie aura l'équipement du joueur (arme et armure)
+      on_player_death: true
+      # Can zombies who DO NOT FEAR SUNLIGHT (and only those) spawn during the day ? Default is false
+      # Les zombies qui NE CRAIGNENT PAS LE SOLEIL (et uniquement ceux là) peuvent-ils spawner en journée ? Faux par défaut
+      daylight_spawn: false
+    characteristics:
+      # Base speed of all zombies
+      # Vitesse de base de tous les zombies
+      speed: 1.455
+
+# Loot and chests, aggregated from packs
+Packs:
+  # Module activé ?
+  enabled: true
+
+Thirst:
+  # Module activé ?
+  enabled: true
+  # The percent subtracted every thirst tick
+  # Le pourcentage de soif retiré dès que la soif tick
+  percent_per_tick: 0.05
+  # The delay in seconds between each thirst tick
+  # Le délai en secondes entre chaque tick de soif
+  seconds_between_ticks: 75
+  # The percentage of thirst (between 0 and 1) given back by drinking. 0 means none, 1 means a single bottle is enough to be fully hydrated
+  # Le pourcentage de soif (entre 0 et 1) que remplit le fait de boire. 0 signifie aucun, 1 signifie que que le joueur est parfaitement hydraté avec une seule bouteille
+  refill_value: 0.8
+  # The delay after which a completely dehydrated player will die, in seconds
+  # Le délai après lequel un joueur complètement désyhdraté meurt, en secondes
+  death_delay: 30
+
+# Handles addons for weapons (recoil and such)
+# Gère les addons pour les armes (recul, etc)
+WeaponsAddon:
+  # Module activé ?
+  enabled: true
+
+# Backpacks
+# Sacs à dos
+Backpacks:
+  # Module activé ?
+  enabled: true
+  # Backpack item id (decimal) - does not work with textual ids
+  # Id de l'objet sac à dos (décimal) - ne fonctionne pas avec les ids textuels
+  item_id: 406
+  # Whether to clear backpacks when players die (true / false)
+  # Si les sacs à dos doivent être effacés quand un joueur meurt (true = vrai / false = faux)
+  clear_on_die: true

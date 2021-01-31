@@ -1,0 +1,10 @@
+# A true terror. Persistent, hard-hitting and incredibly fast. Fears daylight.
+# Une vraie terreur. Persistant, tape dur et incroyablement rapide. Craint la lumière du jour
+
+fears_sunlight: true
+villager: true
+speedmult: 1.25
+damage: 4.0
+persistence: 8
+
+weight: 1

@@ -1,0 +1,79 @@
+;OPERATING / CORE SECTION
+permission-denied=Vous n'avez pas la permission
+connect-as-player=Connectez-vous en tant que joueur
+unfound-module=Ce module n'existe pas. Liste des modules :
+unfound-subcommand=Cette sous-commande n'existe pas pour ce module. Liste des sous-commandes :
+missing-arguments=Cette sous-commande requiert plus d'arguments
+invalid-cmd-usage=Utilisation invalide la sous-commande
+unfound-playername=Le joueur spécifié est introuvable
+
+;AI MODULE
+;;SUBCOMMANDS
+unfound-vspawner=Aucun spawner virtuel n'existe avec ce nom
+;;;VSCREATE SUBCOMMAND
+sc-vscreate-help1=vscreate <nom_du_spawner> <rayon> <facteur> <nombre_max_zombies> <kills_pour_cooldown> <cooldown>
+sc-vscreate-help2=Créé un spawner virtuel. Le centre du spawner est sur votre position
+sc-vscreate-help3=nom_du_spawner : Nom du spawner virtuel, sera utilisé pour le supprimer ou le checker
+sc-vscreate-help4=rayon : Le rayon du spawner dans lequel les zombies liés peuvent spawn
+sc-vscreate-help5=facteur : Le facteur d'atténuation de spawn. La valeur par défaut dans la nature est 28.
+sc-vscreate-help6=          Un nombre plus élevé signifie moins de zombies, un nombre plus bas plus de zombies.
+sc-vscreate-help7=nombre_max_zombies : Le nombre maximum de zombies, au-dessus duquel aucun autre zombie ne peut spawner dans l'enceinte du spawner
+sc-vscreate-help8=kills_pour_cooldown : Le nombre de zombies à tuer pour que le spawner se désactive temporairement.
+sc-vscreate-help9=                      Un spawner en cooldown ne spawn plus de nouveaux zombies (mais ne tue pas ceux encore présents)
+sc-vscreate-help10=cooldown : Le nombre de secondes que met le spawner pour rédémarrer après que le seuil de kills ait été atteint.
+sc-vscreate-success=Le spawner virtual a été créé
+;;;VSCHECK SUBCOMMAND
+sc-vscheck-help1=vscheck <nom_du_spawner>
+sc-vscheck-help2=Permet d'obtenir des informations sur un spawner ainsi que son état
+sc-vscheck-result-header=SPAWNER VIRTUEL :
+sc-vscheck-result-location=Position centrale (source) :
+sc-vscheck-result-radius=Rayon du spawner :
+sc-vscheck-result-factor=Facteur d'atténuation du spawner :
+sc-vscheck-result-zmax=Nombre maximal de zombies :
+sc-vscheck-result-zcount=Nombre actuel de zombies :
+sc-vscheck-result-status=ETAT DU SPAWNER :
+sc-vscheck-result-status-active=ACTIF
+sc-vscheck-result-status-inactive=INACTIF
+sc-vscheck-result-cdkills=Seuil de kills pour cooldown :
+sc-vscheck-result-kills=Nombre actuel de kills :
+sc-vscheck-result-cdvalue=Secondes de cooldown :
+;;;VSDELETE SUBCOMMAND
+sc-vsdelete-help1=vsdelete <nom_du_spawner>
+sc-vsdelete-help2=Supprime un spawner
+sc-vsdelete-success=Le spawner virtual a été supprimé
+
+;BACKPACKS MODULE
+backpack-inv=SAC A DOS
+;;SUBCOMMANDS
+;;;GET SUBCOMMAND
+sc-get-help2=Permet de récupérer un sac à dos pour vous
+;;;GIVE SUBCOMMAND
+sc-give-help1=give <joueur>
+sc-give-help2=Donne un sac à dos au joueur cible
+
+;PACKS MODULE
+;;SUBCOMMANDS
+;;;CREATE SUBCOMMAND
+sc-create-help1=create <catégorie> <type>
+sc-create-help2=Créé un point de loot au curseur.
+sc-create-help3=La catégorie correspond à la catégorie du point de loot (coffre, objet...)
+sc-create-help4=Le type correspond au type de pack, càd l'ensemble des objets possibles d'obtenir
+sc-create-cursor-error=Impossible d'avoir la position sous le curseur. Essayez de vous rapprocher
+sc-create-unfound-ptype=Ce type de pack n'existe pas. Liste des types de pack :
+sc-create-invalid-category=Cette catégorie n'est pas valide. Les catégories sont : chest (coffre), ground_item (objet au sol)
+;;;DELETE SUBCOMMAND
+sc-delete-help2=Vous permet de rentrer en mode suppression
+sc-delete-help3=En mode suppression, les coffres que vous détruisez ne respawnent plus
+sc-delete-help4=Et de plus, les objets au sol avec lesquels vous interagissez sont eux aussi supprimés
+deleting=Vous êtes désormais en mode suppression. Cassez un coffre pour le supprimer définitivement, ou interagissez avec un objet au sol pour le même effet
+not-deleting=Vous n'êtes désormais plus en mode suppression
+chest-deleted=Point de coffre supprimé
+ground-item-deleted=Point de loot supprimé
+
+;THIRST MODULE
+has-drunk=Vous avez bu et vous vous sentez mieux
+dehydrated=Vous êtes déhydraté et allez rapidement mourir si vous ne buvez pas
+thirst=Vous avez soif
+died-thirst=Vous êtes mort de soif
+
+;WEAPONS ADDON MODULE

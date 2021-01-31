@@ -1,0 +1,10 @@
+what: "chest"
+location:
+  #world: "world"
+  world: 9a525701-d37f-453f-8eb4-2a557c287a24
+  x: 229
+  y: 77
+  z: -173
+  yaw: 0
+  pitch: 0
+pack_type: "kitchen"

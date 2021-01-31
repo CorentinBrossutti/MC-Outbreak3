@@ -1,0 +1,17 @@
+Below the list of all rarity values, from least rare to rarest
+Ci-dessous la liste des valeurs de rareté, du moins rare au plus rare
+
+VERY_COMMON
+COMMON
+USUAL
+MEDIUM
+NICE
+GREAT
+RARE
+AWESOME
+
+NB : For ground items, the rarity defines the chance that a given object will be selected
+       For chests, it defines the chance that the item stack will appear
+
+NB : Pour les objets au sol, la rareté définit la probabilité qu'un objet donné soit choisi
+        Pour les coffres, elle définit la probabilité que le stack apparaisse dans le coffre

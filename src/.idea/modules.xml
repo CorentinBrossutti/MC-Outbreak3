@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/AI/AI.iml" filepath="$PROJECT_DIR$/AI/AI.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Backpacks/Backpacks.iml" filepath="$PROJECT_DIR$/Backpacks/Backpacks.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Core/Core.iml" filepath="$PROJECT_DIR$/Core/Core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Packs/Packs.iml" filepath="$PROJECT_DIR$/Packs/Packs.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Thirst/Thirst.iml" filepath="$PROJECT_DIR$/Thirst/Thirst.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WeaponsAddon/WeaponsAddon.iml" filepath="$PROJECT_DIR$/WeaponsAddon/WeaponsAddon.iml" />
+    </modules>
+  </component>
+</project>

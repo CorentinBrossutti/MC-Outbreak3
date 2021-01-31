@@ -1,0 +1,10 @@
+# Stronger in all points than standard zombies and especially persistent, but fears daylight
+# Plus fort en tout point que les zombies standard et particulèrement persistant, mais craint la lumière du jour
+
+fears_sunlight: true
+villager: true
+speedmult: 1.05
+health: 25.0
+persistence: 12
+
+weight: 2

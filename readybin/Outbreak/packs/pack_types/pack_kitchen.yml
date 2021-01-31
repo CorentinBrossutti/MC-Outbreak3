@@ -1,0 +1,132 @@
+# A kitchen pack... Mainly food. Also serves as a concrete example of a pack type
+# Un pack nommé kitchen (cuisine)... Surtout de la nourriture donc. Sert aussi en tant que véritable exemple d'un type de pack
+
+respawn_delay: 420
+
+contents:
+  pork:
+    item:
+      weapon: false
+      id: "grilled_pork"
+    quantity:
+      min: 1
+      max: 4
+    rarity: "common"
+
+  steak:
+    item:
+      weapon: false
+      id: "cooked_beef"
+    quantity:
+      min: 2
+      max: 4
+    rarity: "usual"
+
+  chicken:
+    item:
+      weapon: false
+      id: "cooked_chicken"
+    quantity:
+      min: 2
+      max: 5
+    rarity: "common"
+
+  fish:
+    item:
+      weapon: false
+      id: "cooked_fish"
+    quantity:
+      min: 1
+      max: 4
+    rarity: "usual"
+
+  mutton:
+    item:
+      weapon: false
+      id: "cooked_mutton"
+    quantity:
+      min: 1
+      max: 4
+    rarity: "common"
+
+  bread:
+    item:
+      weapon: false
+      id: "bread"
+    quantity:
+      min: 2
+      max: 6
+    rarity: "nice"
+
+  apple:
+    item:
+      weapon: false
+      id: "apple"
+    quantity:
+      min: 2
+      max: 7
+    rarity: "nice"
+
+  water_bottle:
+    item:
+      weapon: false
+      id: "potion"
+    quantity:
+      min: 1
+      max: 3
+    rarity: "nice"
+
+  cookie:
+    item:
+      weapon: false
+      id: "cookie"
+    quantity:
+      min: 1
+      max: 4
+    rarity: "great"
+
+  rabbit:
+    item:
+      weapon: false
+      id: "cooked_rabbit"
+    quantity:
+      min: 1
+      max: 3
+    rarity: "medium"
+
+  egg:
+    item:
+      weapon: false
+      id: "egg"
+    quantity:
+      min: 3
+      max: 9
+    rarity: "great"
+
+  milk:
+    item:
+      weapon: false
+      id: "milk_bucket"
+    quantity:
+      min: 1
+      max: 1
+    rarity: "rare"
+
+  raw_potato:
+    item:
+      weapon: false
+      id: "potato"
+    quantity:
+      min: 3
+      max: 10
+    rarity: "medium"
+
+  zombie_egg:
+    item:
+      weapon: false
+      id: "monster_egg"
+      data: 54
+    quantity:
+      min: 1
+      max: 1
+    rarity: "awesome"

@@ -1,0 +1,36 @@
+# NOT A ZOMBIE ARCHETYPE FILE
+# PAS UN FICHIER D'ARCHETYPE ZOMBIE
+
+# All archetype files must start with zombie_ and have .yml as extension
+# Tous les fichiers d'archétypes de zombies doivent commencer par zombie_ et avoir l'extension.yml
+
+# You can customize various characteristics for your archetype. Below is a list of all of them
+# Vous pouvez customiser différentes caractéristiques pour votre archétype. Ci-dessous la liste de toutes les possibilités
+
+# Does this archetype fear sunlight ?
+# Cet archétype craint-il le soleil ?
+fears_sunlight: true
+
+# Does this archetype always have a villager appearance ?
+# Cet archétype a-t-il toujours l'apparence d'un villageois ?
+villager: true
+
+# Speed multiplier compared to the standard Outbreak zombie
+# Multiplicateur de vitesse par rapport au zombie standard d'Outbreak
+speedmult: 1.0
+
+# The damage this archetype does in one hit, 3 is minecraft and outbreak's standard
+# Les dégâts que cause cet archétype en un coup, 3 est la valeur standard de minecraft et outbreak
+damage: 3.0
+
+# The amount of health this archetype has. 20 is equal to a player, and is minecraft and outbreak's standard
+# La vie de l'archétype. 20 est égal à un joueur, et c'est la valeur standard de minecraft et d'outbreak
+health: 20.0
+
+# The number of seconds this archetype will keep looking for a target it lost sight of. 5 is outbreak's standard, 3 is minecraft's
+# Pendant combien de secondes cet archétype continuera-t-il à poursuivre un joueur qu'il ne voit plus ? 5 est le standard d'outbreak, 3 celui de minecraft
+persistence: 5
+
+# The weight of this archetype in the pool. See other archetypes for ref. Higher means more likely to appear
+# Le poids de cet archétype lors de la sélection. Voir les autres archétypes pour réf. Une valeur plus élevée signifie que cet archétype apparaîtra plus fréquemment
+weight: 15

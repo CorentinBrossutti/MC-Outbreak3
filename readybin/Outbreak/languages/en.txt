@@ -1,0 +1,183 @@
+;ADMIN SECTION
+permission-denied=You don't have permission
+into-player=Please connect into player
+invalid-number=Invalid specified number!
+player-not-found=Player not found!
+
+;MISC SECTION(INCLUDE BACKPACKS & THIRST)
+backpack-inv=BACKPACK
+has-drink=You've drink and you feel better
+died-thirst=You've died of thirst
+thirsty=You're thirsty
+
+;EFFECTS SECTION
+recoil-config-error=Unable to get custom recoil values. Using default ones.
+blood-msg1=§r§cUh! Shit! I'm bleeding!§r
+blood-msg2=§r§cFuck! I'm bleeding out !§r
+blood-msg3=§r§cUuuugh...i'm feeling bad...§r
+blood-msg4=§r§cI've got a fucking headache, it's probably not the moment...§r
+default-motd=§r§l§1CranaZ §kPost-apocalyptic zombi.\n§r§4§lCome to §r§4§mdie§r §4§lSURVIVE!
+
+;IA SECTION
+choose-friend-inv=Choose a friend
+self-chosen=§r§cPlease don't select yourself§r
+already-gaming=§r§cThis player is already gone from lobby§r
+request-sent=Request sent!
+request-received= would like to go with you
+command-accept=- /cranaz accept to accept
+command-deny=- /cranaz decline to deny
+no-request=§r§cYou don't have any request yet
+request-denied=Request denied
+res-pack-notice=§r§cIt's highly recommended that you get the latest resource pack§r
+darkauron-res-pack=§r§c[Darkauron -> you]§r - You should go ask Torteela for the resource pack
+zombie-msg-assault= has fall under zombies assault. Rest in peace.
+zombie-msg-zomb= has been infected. Sad news.
+zombie-msg-horde= has fall under hordes of zombies.
+go-alone-item=Go to adventure alone
+go-alone-item-desc=Go alone to survive in an unfriendly world
+go-several-item=Go to adventure with a friend
+go-several-item-desc=Go to adventure with ONE friend
+no-spawner=§r§cNo virtual spawner found within 50 blocks around you§r
+custom-zombies-spawn=Modified zombies spawned on your position
+spawn-point-defined=Random spawn point defined
+spawner-radius-default=Zombie spawner with default radius created
+spawner-radius-custom=Zombie spawner with custom radius created
+;Will be completed with default/basic factor. Don't remove space at end.
+spawner-specify-factor=Specify an attenuation factor (default (wild zombies): 
+
+;LEGACY SECTION
+welcome-1=Welcome to 
+welcome-2= on the server. We wish him to well survive!
+personal-welcome=Welcome to you. Don't forget to real the rules. You can also check the survival book.
+combat-left= §r§chas left under combat.§r
+;DEATH MESSAGES
+die-explosion= §r§chas explosed!§r
+die-contact= §r§chas brushed against death!§r
+die-fall= §r§chas crushed on the ground!§r
+die-falling-block= §r§chas been crushed!§r
+die-fire= §r§chas burnt down!§r
+die-unknown= §r§cis just dead.§r
+die-drown= §r§cdrowned!§r
+die-light= §r§chas been blast!§r
+die-shot= §r§chas been shot!§r
+die-starve= §r§cdied of hunger!§r
+die-suffoc= §r§chas ran out of air!§r
+die-suicide= §r§cgave himself the death!§r
+die-void= §r§cgot to the space!§r
+die-poison= §r§chas been poisoned!§r
+choose-respack-inv=Choose a resource pack
+light-respack-item=Light resource pack (performance slightly improved)
+ultra-respack-item=Ultra resource pack (not as performance heavy as its name suggests)
+logout3s=Logout in 3 seconds...
+get-respack-warn=Before going to adventure, you should get the resource pack
+adv-already-gone=You're already playing
+
+;LOOTS SECTION
+loot-deleted=Loot point successfully deleted!
+unable-delete-loot=Unable to delete the loot
+pack-deleted=Pack point successfully deleted!
+unable-delete-pack=Unable to delete the pack
+edition-mode1=Edition mode activated. Right click to delete loot.
+edition-mode2=Edition mode deactivated.
+pack-list-header=|-----Pack list-----|
+pack-bedroom=BEDROOM - contains various common items.
+pack-farm=FARM - mainly contains food
+pack-kitchen=KITCHEN - mainly contains food
+pack-market=MARKET - contains various items, from food to weapons like axe, machete...
+pack-military=MILITARY - contains guns, weapons, camo, and other rare items
+pack-hospital=HOSPITAL - contains bandage, analgesics, drugs, etc.
+invalid-pack=Please specify a valid pack!
+loot-created=Loot point successfully created
+pack-created=Chest point successfully created
+pack-resources=RESOURCES - contains various resources (gravel, gold, diamond...)
+
+;HELP SECTION
+;IA - ZIA.class
+reload=/outbreak reload - Reload OutBreak
+zombies-spawn=/outbreak zombie [x] - Spawns X custom zombies on the block you're targetting. If unspecified, assumes that X is 1
+define-spawner=/outbreak spawner - Define a virtual spawner on the block you're targetting
+spawner-state=/outbreak state - Get the nearest spawner informations within 50 blocks
+define-spawn=/outbreak spawn - Define a random spawn point
+;LOOTS - Loots.class
+clp-loot=/clp loot - Define a loot point (random item from pack which spawns on the ground)
+clp-pack=/clp pack - Define a pack point (chest which respawns)
+clp-delpack=/clp delpack - Delete a pack point
+clp-del=/clp del - Delete loot point(s)
+clp-get=/clp get [item] [number] - Gives you {number} items. Specify no item to get the list.
+clp-packs=/clp packs - Shows you the list of available packs (usable for both loots and packs).
+
+;ITEMS SECTION
+mosin=Mosin Nagant
+mosin-ammo=Mosin Nagant ammos
+mosin-ammo2=Sniper rifle ammos, adpated for .45 Mosin Nagant
+ak-47=AK-47
+ak-47-ammo=AK-47 mags
+ak-47-ammo2=Assault rifle mags, adapted for Kalachnikov AK-47
+bazooka-ammo=Rocket
+bazooka-ammo2=Useful for bazooka & rocket throwers
+m320h=M320-H
+m320h-ammo=M320-H grenades
+m320h-ammo2=Grenades for grenade thrower type M320-H
+bar=BAR Browning
+bar-ammo=BAR Browning mags
+bar-ammo2=Machine gun mags, type BAR Browning
+stock-piece=Stock
+stock-piece0=To craft weapons
+smith=Smith Colt
+smith-ammo=Smith Colt mags
+smith-ammo2=Mags for Colt type Smith
+t-shirt=T-Shirt
+pants=Pants
+boots=Boots
+helmet=Cap
+fence=Barricade
+fence2=To be protected under any circumstances !
+flare=Light flare
+flare2=If you want to be seen from afar
+mass=Mace
+mass2=Useful if you want to waste some undead !
+backpack=Backpack
+backpack2=Allows you to carry more items
+backpack3=Right click in the inventory to open
+axe=Axe
+axe2=Useful to cut off some annoying zombies
+machette=Machete
+machette2=A well-sharpened machete to quickly and silently kill zombies
+bow=Bow
+bow2=To discreetly kill zombies!
+bandages=Bandage
+bandages2=It can be useful...
+blood-small=Small blood bag
+blood-big=Big blood bag
+blood-bag-desc=A little transfusion ?
+amphet=Amphetamines
+amphet2=This drug is an amazing shit to feel
+amphet3=invincible near zombies for a short amount of time
+analgesics=Analgesics
+analgesics2=To cure ailments
+camo11=Camo outfit - chest
+camo12=Allows to be seen from less afar - 20%
+camo21=Camo outfit - Helmet
+camo22=Allows to be seen from less afar - 10%
+camo31=Camo outfit - Boots
+camo32=Allows to be seen from less afar - 25%
+camo41=Camo outfit - Pants
+camo42=Allows to be seen from less afar - 25%
+water=Water bottle
+water2=For all types of thirst !
+arterial=Arterial poison
+arterial2=Increase target's blood pressure
+arterial3=Causes medium direct damage
+arterial4=Need 45 seconds to take effect
+neuro=Neurotoxic poison
+neuro2=Sharply weakens the target
+neuro3=Causes NO direct damage
+neuro4=Needs 2 minutes to take effect
+painkillers=Painkillers
+painkillers2=When you're a in hurry
+grip-piece=Grip
+grip-piece0=To craft weapons
+barrel-piece=Barrel
+barrel-piece0=To craft weapons
+spring-piece=Spring
+spring-piece0=To craft weapons
